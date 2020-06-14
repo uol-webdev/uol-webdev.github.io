@@ -1,0 +1,795 @@
+/*Common CSS-------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px){
+    body{
+        background: rgb(50, 100, 100);
+        height: 100%;
+    }
+    
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1.3em;
+        color: white;
+    }
+    
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 17px;;
+        color: black;
+    }
+    
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: black;
+    }
+
+}
+
+
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+    body{
+        background: white;
+        height: 100%;
+    }
+    
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1.4em;
+        color: white;
+    }
+    
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 17px;;
+        color: black;
+    }
+    
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: black;
+    }
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px){
+    body{
+        background: white;
+        height: 100%;
+    }
+    
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 2em;
+        color: white;
+    }
+    
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 17px;;
+        color: black;
+    }
+    
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: black;
+    }
+}
+
+
+
+
+
+/*Header CSS---------------------------------------*/
+
+header { grid-area: header; }
+
+header{
+    background:rgba(78, 119, 186, 255);
+    border-radius: 10px;;
+    border: 1px solid white;
+    text-align: center;
+    width:100%;
+    height:200px;
+    padding: 10px;
+}
+
+
+
+/*Nav CSS-------------------------------------------*/
+
+nav { grid-area: nav; }
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px){
+    nav{
+        background:rgba(78, 119, 186, 255);
+        border-radius: 10px;
+        border: 1px solid white;
+        text-align:center;
+        width:100%;
+       
+        
+        
+        
+    }
+    
+}
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+    nav{
+        background:rgba(78, 119, 186, 255);
+        border-radius: 10px;
+        border: 1px solid white;
+        text-align:center;
+        width:100%;
+        
+        
+        
+    }
+    
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px){
+    nav{
+        background:rgba(78, 119, 186, 255);
+        border-radius: 10px;
+        border: 1px solid white;
+        text-align:center;
+        width:100%;
+        
+        
+        
+    }
+    
+}
+
+
+
+/*Index.html CSS------------------------------------*/
+
+
+#searchBar { grid-area: searchBar; }
+#language { grid-area: language; }
+#miscInfo { grid-area: miscInfo; }
+#imageCarousel { grid-area: imageCarousel; }
+#specialEvents { grid-area: specialEvents; }
+#buyTickets { grid-area: buyTickets; }
+#bookAccommodation { grid-area: bookAccommodation; }
+#annualPass { grid-area: annualPass; }
+#socialMediaPhotos { grid-area: socialMediaPhotos; }
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+    .grid-container-index {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+          'header nav nav nav nav nav searchBar searchBar language'
+          'miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
+          'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
+          'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
+          'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
+          'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
+          'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
+          'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+          'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+          'footer footer footer footer footer footer footer footer';
+        background-color: white;
+      }
+
+      #fpIntro{
+        border: 1px solid grey;
+        border-bottom: none;
+        background: rgb(212, 212, 134);
+         
+    }
+    
+    #fpIntro #fpintroTitle{
+        
+        padding:10px;
+        position:relative;
+    }
+    
+    #fpIntro #fpintroTitle p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 20px;;
+        color:rgb(0, 0, 0);
+        text-align: center;
+        
+    }
+    
+    #fpIntro #fpintroText{
+      width:100%;
+      padding:10px;
+      text-align: center;
+      
+    }
+    
+    #fplinkArea{
+    
+    }
+    
+    #fplinkArea .fplinkAreaContent{
+        border: 1px solid grey;
+        border-bottom: none;
+        position: relative;
+        padding: 40px;
+        
+    }
+    
+    
+    
+    #fplinkArea .fplinkAreaContent h2{
+        background: rgb(212, 212, 134);
+    }
+    
+    #fplinkArea .fplinkAreaContent p{
+     
+    }
+    
+    #fplinkArea .fplinkAreaContent a{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: blue;
+    } 
+    
+    #bestSellersList{
+        background: rgb(243, 243, 226);
+        border: 1px solid grey;
+        border-bottom: none;
+    }
+    
+    #bestSellersList h2{
+     position: relative;
+     padding-left:22px;
+    }
+    
+    #bestSellersList ol{
+        float: left;
+    }
+    
+    #bestSellersList ol li{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1em;
+        color: black; 
+        margin-bottom: 40px;
+    }
+}
+
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+
+    .grid-container-index {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto auto auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+      'header nav nav nav nav nav searchBar searchBar language'
+      'miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
+      'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
+      'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
+      'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
+      'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
+      'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
+      'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+      'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+      'footer footer footer footer footer footer footer footer';
+  background-color: white;
+    }
+
+   
+      
+      #fpIntro{
+          border: 1px solid grey;
+          border-bottom: none;
+          background: rgb(212, 212, 134);
+          
+      }
+      
+      #fpIntro #fpintroTitle{
+          
+          padding:10px;
+          position:relative;
+      }
+      
+      #fpIntro #fpintroTitle p{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 25px;;
+          color:rgb(0, 0, 0);
+          
+      }
+      
+      #fpIntro #fpintroText{
+        width:400px;
+        padding:10px;
+      }
+      
+      #fplinkArea{
+      
+      }
+      
+      #fplinkArea .fplinkAreaContent{
+          border: 1px solid grey;
+          border-bottom: none;
+          position: relative;
+          padding: 40px;
+          
+      }
+      
+      
+      
+      #fplinkArea .fplinkAreaContent h2{
+          background: rgb(212, 212, 134);
+      }
+      
+      #fplinkArea .fplinkAreaContent p{
+       
+      }
+      
+      #fplinkArea .fplinkAreaContent a{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 15px;;
+          color: blue;
+      } 
+      
+      #bestSellersList{
+          background: rgb(243, 243, 226);
+          border: 1px solid grey;
+          border-bottom: none;
+      }
+      
+      #bestSellersList h2{
+       position: relative;
+       padding-left:22px;
+      }
+      
+      #bestSellersList ol{
+          float: left;
+      }
+      
+      #bestSellersList ol li{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 1em;
+          color: black; 
+          margin-bottom: 40px;
+      }
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+    .grid-container-index {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto auto auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+      'header nav nav nav nav nav searchBar searchBar language'
+      'miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
+      'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
+      'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
+      'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
+      'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
+      'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
+      'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+      'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+      'footer footer footer footer footer footer footer footer';
+  background-color: white;
+    }
+    
+    #fpIntro{
+        border: 1px solid grey;
+        border-bottom: none;
+        background: rgb(212, 212, 134);
+        height: 240px;
+        
+    }
+    
+    #fpIntro #fpintroTitle{
+        
+        padding:5px;
+        position:relative;
+    }
+    
+    #fpIntro #fpintroTitle p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 25px;;
+        color:rgb(0, 0, 0);
+        
+    }
+    
+    #fpIntro #fpintroText{
+      width:100%;
+      padding:10px;
+      position: relative;
+      bottom:40px;
+    }
+    
+    #fplinkArea{
+    
+    }
+    
+    #fplinkArea .fplinkAreaContent{
+        border: 1px solid grey;
+        border-bottom: none;
+        border-right:none;
+        position: relative;
+        padding: 40px;
+        
+    }
+    
+    
+    
+    #fplinkArea .fplinkAreaContent h2{
+        background: rgb(212, 212, 134);
+    }
+    
+    #fplinkArea .fplinkAreaContent p{
+     
+    }
+    
+    #fplinkArea .fplinkAreaContent a{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: blue;
+    } 
+    
+    #bestSellersList{
+        background: rgb(243, 243, 226);
+        border: 1px solid grey;
+    }
+    
+    #bestSellersList h2{
+     position: relative;
+     padding:15px;
+    }
+    
+    #bestSellersList ol{
+        text-align: left;
+    }
+    
+    #bestSellersList ol li{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 0.8em;
+        color: black; 
+        margin-bottom: 40px;
+        padding:5px;
+    }
+    
+    }
+
+
+
+
+
+
+
+
+
+/*Footer CSS-------------------------------------------*/
+
+footer { grid-area: footer; }
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px){
+    footer
+{
+    background:rgba(78, 119, 186, 255);
+    text-align: center;
+    width:100%;
+    padding: 10px;
+}
+
+footer #fpcontactInformation
+{
+    background: rgb(243, 243, 226);
+    text-align: center;
+    margin: auto;
+    width:99%;
+    padding:10px;
+    
+}
+
+footer #fpcontactInformation ul
+{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer #fpcontactInformation ul li
+{
+    padding: 8px; 
+}
+
+
+footer #fpcontactInformation #contact
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 20px;;
+    color: red;
+}
+
+footer #fpcontactInformation #name
+{
+  
+}
+
+footer #fpcontactInformation #email
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: blue;
+}
+
+footer #fpcontactInformation #charity
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: black;
+}
+
+
+
+footer #fpcontactInformation ul li a
+{
+    
+}
+}
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+    footer
+    {
+        background:rgba(78, 119, 186, 255);
+        text-align: center;
+        width:100%;
+        padding: 10px;
+    }
+    
+    footer #fpcontactInformation
+    {
+        background: rgb(243, 243, 226);
+        text-align: center;
+        margin: auto;
+        width:99%;
+        padding:10px;
+        
+    }
+    
+    footer #fpcontactInformation ul
+    {
+        list-style:none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    footer #fpcontactInformation ul li
+    {
+        padding: 8px; 
+    }
+    
+    
+    footer #fpcontactInformation #contact
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: red;
+    }
+    
+    footer #fpcontactInformation #name
+    {
+      
+    }
+    
+    footer #fpcontactInformation #email
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: blue;
+    }
+    
+    footer #fpcontactInformation #charity
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: black;
+    }
+    
+    
+    
+    footer #fpcontactInformation ul li a
+    {
+        
+    }
+}
+@media only screen and (min-width: 1011px){
+    footer
+{
+    background:rgba(78, 119, 186, 255);
+    text-align: center;
+    width:100%;
+    padding: 10px;
+}
+
+footer #fpcontactInformation
+{
+    background: rgb(243, 243, 226);
+    text-align: center;
+    margin: auto;
+    width:99%;
+    padding:10px;
+    
+}
+
+footer #fpcontactInformation ul
+{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer #fpcontactInformation ul li
+{
+    display: inline-block;
+    margin:20px;
+    height: 5px;
+    position: relative;
+    padding-bottom: 10px;
+    
+}
+
+
+footer #fpcontactInformation #contact
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 20px;;
+    color: red;
+}
+
+footer #fpcontactInformation #name
+{
+  
+}
+
+footer #fpcontactInformation #email
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: blue;
+}
+
+footer #fpcontactInformation #charity
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: black;
+}
+
+
+
+footer #fpcontactInformation ul li a
+{
+    
+}
+}
+
+
+
+

@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+	grid-area: header;
+}
+#logo {
+	max-width: 100%;
+	height: auto;
+}
+
+nav {
+	grid-area: nav;
+}
+nav li {
+	display: inline;
+}
+
+#searchBar {
+	grid-area: searchBar;
+}
+#searchIcon {
+	max-width: 4%;
+	height: auto;
+}
+#language {
+	grid-area: language;
+}
+#miscInfo {
+	grid-area: miscInfo;
+}
+#imageCarousel {
+	grid-area: imageCarousel;
+}
+#specialEvents {
+	grid-area: specialEvents;
+}
+#buyTickets {
+	grid-area: buyTickets;
+}
+#bookAccommodation {
+	grid-area: bookAccommodation;
+}
+#annualPass {
+	grid-area: annualPass;
+}
+#socialMediaPhotos {
+	grid-area: socialMediaPhotos;
+}
+footer {
+	grid-area: footer;
+}
+footer li {
+	display: inline;
+}
+.smLogo {
+	max-width: 2%;
+	height: auto;
+}
+
+.grid-container-index {
+	display: grid;
+	grid-template-columns: repeat(8, 12.5%);
+	grid-template-areas:
+		'header nav nav nav nav searchBar searchBar language'
+		'header miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
+		'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
+		'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
+		'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
+		'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
+		'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
+		'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+		'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+		'footer footer footer footer footer footer footer footer';
+	grid-gap: 1px;
+	background-color: white;
+}
+
+.grid-container-index > div {
+	background-color: whitesmoke;
+	padding: 5px;
+}
