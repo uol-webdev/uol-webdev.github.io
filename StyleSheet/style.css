@@ -60,7 +60,7 @@ footer li {
 }
 
 /*Mobile-------------------------------------*/
-@media only screen and (max-width: 570px)
+@media only screen and (max-width: 400px)
 {
 	.grid-container-index {
 		display: grid;
@@ -80,7 +80,7 @@ footer li {
 	}
 }
 /*Tablet-------------------------------------*/
-@media only screen and (min-width: 571px) and (max-width: 1010px){
+@media only screen and (min-width: 401px) and (max-width: 1280px){
 	.grid-container-index {
 		display: grid;
 		grid-template-columns: repeat(8, 12.5%);
@@ -99,7 +99,7 @@ footer li {
 }
 
 /*Desktop-------------------------------------*/
-@media only screen and (min-width: 1011px) {
+@media only screen and (min-width: 1281px) {
 .grid-container-index {
 	display: grid;
 	grid-template-columns: repeat(8, 12.5%);
