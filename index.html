@@ -7,15 +7,16 @@
     <meta name="description" content="This is a website for Jalaya.">
     <meta name="author" content="#web-development-2-rsd">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--meta name="refresh" content="600"-->
     <meta name="keywords" content="Jalaya ThemePark">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
 </head>
 
 <body>
     <div class="grid-container-index">
         <header>
-            <object id="logo" data="img/logo.jpg">Jalaya Logo
+            <object id="logo" data="img/logo.jpg">
+                Our ThemePark Name Here
             </object>
         </header>
 
@@ -30,12 +31,13 @@
 
         <div id="searchBar">
             <input type="text" id="searchtext" />
-            <object id="searchIcon" data="img/search.svg" Search>
+            <object id="searchIcon" data="img/search.svg">
+                Search
             </object>
         </div>
 
         <div id="language">
-            <button id="language">Language</button>
+            <button>Language</button>
         </div>
 
         <div id="miscInfo">
@@ -43,7 +45,39 @@
         </div>
 
         <div id="imageCarousel">
-            <p>carousel here</p>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="https://via.placeholder.com/1000x200?text=Slide%201" alt="Slide 1">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="https://via.placeholder.com/1000x200?text=Slide%202" alt="Slide 2">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="https://via.placeholder.com/1000x200?text=Slide%203" alt="Slide 3">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="https://via.placeholder.com/1000x200?text=Slide%204" alt="Slide 4">
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
 
         <div id="specialEvents">
@@ -88,5 +122,8 @@
         </footer>
     </div>
 </body>
+
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="Script/main.js"></script>
 
 </html>

@@ -33,6 +33,11 @@ nav li {
 #imageCarousel {
 	grid-area: imageCarousel;
 }
+#imageCarousel .swiper-container {
+	width: 100%;
+	height: 200px;
+	text-align: center;
+}
 #specialEvents {
 	grid-area: specialEvents;
 }
