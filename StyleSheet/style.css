@@ -59,6 +59,47 @@ footer li {
 	height: auto;
 }
 
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+	.grid-container-index {
+		display: grid;
+		grid-template-columns: repeat(8, 12.5%);
+		grid-template-areas:
+			'header header header header header searchBar searchBar language'
+			'nav nav nav nav nav nav nav nav'
+			'miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
+			'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
+			'buyTickets buyTickets buyTickets buyTickets bookAccommodation bookAccommodation bookAccommodation bookAccommodation'
+			'specialEvents specialEvents specialEvents specialEvents specialEvents specialEvents specialEvents specialEvents'
+			'annualPass annualPass annualPass annualPass annualPass annualPass annualPass annualPass'
+			'socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+			'footer footer footer footer footer footer footer footer';
+		grid-gap: 1px;
+		background-color: white;
+	}
+}
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+	.grid-container-index {
+		display: grid;
+		grid-template-columns: repeat(8, 12.5%);
+		grid-template-areas:
+		'header header header header header searchBar searchBar language'
+		'nav nav nav nav nav nav nav nav'
+		'miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
+			'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
+			'buyTickets buyTickets buyTickets buyTickets bookAccommodation bookAccommodation bookAccommodation bookAccommodation'
+			'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
+			'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+			'footer footer footer footer footer footer footer footer';
+		grid-gap: 1px;
+		background-color: white;
+	}
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
 .grid-container-index {
 	display: grid;
 	grid-template-columns: repeat(8, 12.5%);
@@ -67,17 +108,20 @@ footer li {
 		'header miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
 		'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
 		'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
-		'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
 		'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
-		'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
-		'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
 		'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
 		'footer footer footer footer footer footer footer footer';
 	grid-gap: 1px;
 	background-color: white;
 }
 
+
+}
+
+<-- Common -->
+<--temp code to see containers better-->
 .grid-container-index > div {
 	background-color: whitesmoke;
 	padding: 5px;
 }
+<--end temp code to see containers better-->
