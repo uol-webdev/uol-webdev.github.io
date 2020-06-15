@@ -123,6 +123,7 @@ footer li {
 		background-color: white;
 	}
 }
+<<<<<<< HEAD
 /*Desktop-------------------------------------*/
 @media only screen and (min-width: 1281px) {
 	.grid-container-index {
@@ -140,3 +141,33 @@ footer li {
 		background-color: white;
 	}
 }
+=======
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1281px) {
+.grid-container-index {
+	display: grid;
+	grid-template-columns: repeat(8, 12.5%);
+	grid-template-areas:
+		'header nav nav nav nav searchBar searchBar language'
+		'header miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
+		'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
+		'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
+		'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
+		'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+		'footer footer footer footer footer footer footer footer';
+	grid-gap: 1px;
+	background-color: white;
+}
+
+
+}
+
+<-- Common -->
+<--temp code to see containers better-->
+.grid-container-index > div {
+	background-color: whitesmoke;
+	padding: 5px;
+}
+<--end temp code to see containers better-->
+>>>>>>> a5e5092619dadb4aaa31f1b10baab6b4a7d21553
