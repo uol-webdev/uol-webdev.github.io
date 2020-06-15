@@ -1,54 +1,142 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	}
 }
 
-header { grid-area: header; }
-#logo { max-width: 100%; height: auto;
-}
 
-nav {grid-area: nav;}
-nav li{display:inline;}
-
-#searchBar { grid-area: searchBar; }
-#searchIcon {max-width: 4%; height:auto}
-#language { grid-area: language; }
-#miscInfo { grid-area: miscInfo; }
-#imageCarousel { grid-area: imageCarousel; }
-#specialEvents { grid-area: specialEvents; }
-#buyTickets { grid-area: buyTickets; }
-#bookAccommodation { grid-area: bookAccommodation; }
-#annualPass { grid-area: annualPass; }
-#socialMediaPhotos { grid-area: socialMediaPhotos; }
-footer { grid-area: footer; }
-footer li{display:inline;}
-.smLogo {max-width: 2%; height:auto}
-
-.grid-container-index {
-        display: grid;
-        grid-template-columns: repeat(8, 12.5%);
-        grid-template-areas:
-          'header nav nav nav nav searchBar searchBar language'
-          'header miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
-          'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
-          'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
-          'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
-          'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
-          'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
-          'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
-          'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
-          'footer footer footer footer footer footer footer footer'
-              ;
-              grid-gap: 1px;
-              background-color: white;
-}
-
+<--temp code to see containers better-->
 .grid-container-index > div {
-        background-color: whitesmoke;
-        padding: 5px;
+	background-color: whitesmoke;
+	padding: 5px;
+}
+<--end temp code to see containers better-->
+
+
+header {
+	grid-area: header;
+}
+#logo {
+	max-width: 100%;
+	height: auto;
 }
 
+nav {
+	font-size: 1.3em;
+	grid-area: nav;
+}
+nav li {
+	display: inline;
+}
 
+#searchBar {
+	grid-area: searchBar;
+}
+#searchIcon {
+	max-width: 4%;
+	height: auto;
+}
+#language {
+	grid-area: language;
+}
+#miscInfo {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: white;
+	background-color: orange;
+	grid-area: miscInfo;
+}
+#imageCarousel {
+	grid-area: imageCarousel;
+}
+#imageCarousel .swiper-container {
+	width: 100%; 
+	height: 400px;
+	background-color: skyblue;
+}
+#specialEvents {
+	grid-area: specialEvents;
+}
+#buyTickets {
+	grid-area: buyTickets;
+}
+#bookAccommodation {
+	grid-area: bookAccommodation;
+}
+#annualPass {
+	grid-area: annualPass;
+}
+#socialMediaPhotos {
+	grid-area: socialMediaPhotos;
+}
+footer {
+	font-size: 1.3em;
+	grid-area: footer;
+}
+footer li {
+	display: inline;
+}
+.smLogo {
+	max-width: 2%;
+	height: auto;
+}
 
-<--
-comments
--->
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 400px)
+{
+	.grid-container-index {
+		display: grid;
+		grid-template-columns: repeat(8, 12.5%);
+		grid-template-areas:
+			'header header header header header searchBar searchBar language'
+			'nav nav nav nav nav nav nav nav'
+			'miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
+			'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
+			'buyTickets buyTickets buyTickets buyTickets bookAccommodation bookAccommodation bookAccommodation bookAccommodation'
+			'specialEvents specialEvents specialEvents specialEvents specialEvents specialEvents specialEvents specialEvents'
+			'annualPass annualPass annualPass annualPass annualPass annualPass annualPass annualPass'
+			'socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+			'footer footer footer footer footer footer footer footer';
+		grid-gap: 1px;
+		background-color: white;
+	}
+}
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 401px) and (max-width: 1280px){
+	.grid-container-index {
+		display: grid;
+		grid-template-columns: repeat(8, 12.5%);
+		grid-template-areas:
+		'header header header header header searchBar searchBar language'
+		'nav nav nav nav nav nav nav nav'
+		'miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
+			'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
+			'buyTickets buyTickets buyTickets buyTickets bookAccommodation bookAccommodation bookAccommodation bookAccommodation'
+			'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
+			'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+			'footer footer footer footer footer footer footer footer';
+		grid-gap: 1px;
+		background-color: white;
+	}
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1281px) {
+	.grid-container-index {
+		display: grid;
+		grid-template-columns: repeat(8, 12.5%);
+		grid-template-areas:
+			'header nav nav nav nav searchBar searchBar language'
+			'miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
+			'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
+			'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
+			'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
+			'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
+			'footer footer footer footer footer footer footer footer';
+		grid-gap: 1px;
+		background-color: white;
+	}
+}
