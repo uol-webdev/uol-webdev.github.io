@@ -9,12 +9,7 @@
 }
 
 
-<--temp code to see containers better-->
-.grid-container-index > div {
-	background-color: whitesmoke;
-	padding: 5px;
-}
-<--end temp code to see containers better-->
+
 
 
 header {
@@ -56,7 +51,6 @@ nav li {
 #imageCarousel .swiper-container {
 	width: 100%; 
 	height: 400px;
-	background-color: skyblue;
 }
 #specialEvents {
 	grid-area: specialEvents;
@@ -104,6 +98,12 @@ footer li {
 		grid-gap: 1px;
 		background-color: white;
 	}
+	/* temp for display only */
+	.grid-container-index > div {
+		background-color: pink;
+		padding: 2px;
+	/* end temp */
+	}	
 }
 /*Tablet-------------------------------------*/
 @media only screen and (min-width: 401px) and (max-width: 1280px){
@@ -122,6 +122,12 @@ footer li {
 		grid-gap: 1px;
 		background-color: white;
 	}
+	/* temp for display only */
+	.grid-container-index > div {
+		background-color: lightgreen;
+		padding: 2px;
+	/* end temp */
+	}	
 }
 /*Desktop-------------------------------------*/
 @media only screen and (min-width: 1281px) {
@@ -139,4 +145,12 @@ footer li {
 		grid-gap: 1px;
 		background-color: white;
 	}
+	/* temp for display only */
+	.grid-container-index > div {
+		background-color: lightblue;
+		padding: 2px;
+	/* end temp */
+	}	
+
 }
+
