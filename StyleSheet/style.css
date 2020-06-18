@@ -26,14 +26,6 @@ end temp code to see containers */
 	background-size: cover;
 	position: relative;
 }
-=======
-=======
-
->>>>>>> fc5a88a8359efeca82aa77a4c76ea75c1e0b6406
-
-
-
->>>>>>> fc5a88a8359efeca82aa77a4c76ea75c1e0b6406
 
 header {
 	grid-area: hddr;
@@ -101,10 +93,9 @@ nav a.active {
 	width: 100%; 
 	height: 400px;
 	}
-
-	#specialEvents {
-background-color: #0169A4;
-color: white;
+#specialEvents {
+	background-color: #0169A4;
+	color: white;
 	grid-area: spcl;
 }
 #buyTickets {
@@ -236,4 +227,3 @@ footer a {
 		grid-gap: 10px;
 		background-color: white;
 	}
-}
