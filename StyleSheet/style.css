@@ -14,7 +14,6 @@ html, body {
 	font-family: Arial, Helvetica, sans-serif;
   }
 
-<<<<<<< HEAD
 /*temp code to see containers 
 * {
 	border: 2px dashed whitesmoke;	
@@ -28,6 +27,9 @@ end temp code to see containers */
 	position: relative;
 }
 =======
+=======
+
+>>>>>>> fc5a88a8359efeca82aa77a4c76ea75c1e0b6406
 
 
 
@@ -98,12 +100,9 @@ nav a.active {
 #imageCarousel .swiper-container {
 	width: 100%; 
 	height: 400px;
-<<<<<<< HEAD
 	}
-=======
-}
->>>>>>> fc5a88a8359efeca82aa77a4c76ea75c1e0b6406
-#specialEvents {
+
+	#specialEvents {
 background-color: #0169A4;
 color: white;
 	grid-area: spcl;
@@ -199,15 +198,9 @@ footer a {
 			'spcl spcl spcl spcl spcl spcl spcl spcl spcl spcl spcl spcl'
 			'smph smph smph smph smph smph smph smph smph smph smph smph'
 			'foot foot foot foot foot foot foot foot foot foot foot foot';
-		grid-gap: 10px;
-		background-color: red;
+		grid-gap: 3px;
+		background-color: white;
 	}
-	/* temp for display only */  
-	.grid-container-index > div {
-		background-color: pink;
-		padding: 2px;
-	/* end temp */
-	}	
 }
 /*Tablet-------------------------------------*/
 @media only screen and (min-width: 401px) and (max-width: 1280px){
@@ -223,15 +216,9 @@ footer a {
 			'spcl spcl spcl spcl pass pass pass pass pass pass pass pass'
 			'spcl spcl spcl spcl smph smph smph smph smph smph smph smph'
 			'foot foot foot foot foot foot foot foot foot foot foot foot';
-		grid-gap: 10px;
+		grid-gap: 5px;
 		background-color: white;
 	}
-	/* temp for display only */
-	.grid-container-index > div {
-		background-color: lightgreen;
-		padding: 2px;
-	/* end temp */
-	}	
 }
 /*Desktop-------------------------------------*/
 @media only screen and (min-width: 1281px) {
@@ -249,16 +236,4 @@ footer a {
 		grid-gap: 10px;
 		/*background-color: blue;*/
 	}
-<<<<<<< HEAD
-} 
-=======
-	/* temp for display only */
-	.grid-container-index > div {
-		background-color: lightblue;
-		padding: 2px;
-	/* end temp */
-	}	
-
 }
-
->>>>>>> fc5a88a8359efeca82aa77a4c76ea75c1e0b6406
