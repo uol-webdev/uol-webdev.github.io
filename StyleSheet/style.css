@@ -7,119 +7,207 @@
 	font-weight: normal;
 	}
 }
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+  }
 
-
-<--temp code to see containers better-->
-.grid-container-index > div {
-	background-color: whitesmoke;
-	padding: 5px;
+/*temp code to see containers 
+* {
+	border: 2px dashed whitesmoke;	
 }
-<--end temp code to see containers better-->
-
+end temp code to see containers */
+.grid-container-index {
+	background-image: url("../img/splash-water.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
 
 header {
-	grid-area: header;
+	grid-area: hddr;
 }
 #logo {
 	max-width: 100%;
+	width=100;
 	height: auto;
 }
 
 nav {
+	justify-self: center;
 	font-size: 1.3em;
-	grid-area: nav;
-}
-nav li {
-	display: inline;
+	grid-area: navi;
+	overflow: hidden;
+	background-color: #38ADCE;
+	height: 40%;
 }
 
+nav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+
+nav a:hover {
+	background-color: #2A8DA9;
+	color: black;
+  }
+  
+nav a.active {
+	background-color: #0169A4;
+	color: white;
+  }
+
 #searchBar {
-	grid-area: searchBar;
+	grid-area: srch;
 }
 #searchIcon {
 	max-width: 4%;
 	height: auto;
 }
 #language {
-	grid-area: language;
+	justify-self: start;
+	grid-area: lang;
 }
+
 #miscInfo {
-	font-size: 1.3em;
-	font-weight: bold;
+	margin: 20px 30px;
+	background-color: #0169A4;
 	color: white;
-	background-color: orange;
-	grid-area: miscInfo;
+		border: 3px solid #38ADCE;
+	font-size: 1.25em;
+
+	font-weight: bold;
+	grid-area: info;
 }
 #imageCarousel {
-	grid-area: imageCarousel;
+	grid-area: crsl;
 }
 #imageCarousel .swiper-container {
 	width: 100%; 
 	height: 400px;
-	background-color: skyblue;
-}
+	}
 #specialEvents {
-	grid-area: specialEvents;
+background-color: #0169A4;
+color: white;
+	grid-area: spcl;
 }
 #buyTickets {
-	grid-area: buyTickets;
+	justify-self: center;
+	grid-area: tckt;
 }
 #bookAccommodation {
-	grid-area: bookAccommodation;
+	justify-self: center;
+	grid-area: accm;
 }
 #annualPass {
-	grid-area: annualPass;
+	background-color: #0169A4;
+	color: white;
+		justify-self: center;
+	grid-area: pass;
 }
 #socialMediaPhotos {
-	grid-area: socialMediaPhotos;
+	background-color: #0169A4;
+	color: white;
+		grid-area: smph;
 }
+.smPic {
+	padding: 5px 5px;
+}
+
+.button {
+	background-color: #0169A4;
+	border-radius: 25px;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+  }
+
+  /*
 footer {
 	font-size: 1.3em;
-	grid-area: footer;
+	grid-area: foot;
 }
 footer li {
 	display: inline;
 }
-.smLogo {
-	max-width: 2%;
-	height: auto;
+*/
+footer {
+	justify-self: center;
+	font-size: 1.3em;
+	grid-area: foot;
+	overflow: hidden;
+	background-color: #38ADCE;
+	height: 80%;
 }
+
+footer a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+
+  footer a:hover {
+	background-color: #2A8DA9;
+	color: black;
+  }
+  
+  footer a.active {
+	background-color: #0169A4;
+	color: white;
+  }
+
 
 /*Mobile-------------------------------------*/
 @media only screen and (max-width: 400px)
 {
 	.grid-container-index {
 		display: grid;
-		grid-template-columns: repeat(8, 12.5%);
+		grid-template-columns: repeat(12, 1fr);
 		grid-template-areas:
-			'header header header header header searchBar searchBar language'
-			'nav nav nav nav nav nav nav nav'
-			'miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
-			'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
-			'buyTickets buyTickets buyTickets buyTickets bookAccommodation bookAccommodation bookAccommodation bookAccommodation'
-			'specialEvents specialEvents specialEvents specialEvents specialEvents specialEvents specialEvents specialEvents'
-			'annualPass annualPass annualPass annualPass annualPass annualPass annualPass annualPass'
-			'socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
-			'footer footer footer footer footer footer footer footer';
-		grid-gap: 1px;
-		background-color: white;
+			'hddr hddr hddr xxxx xxxx xxxx xxxx xxxx xxxx xxxx srch srch'
+			'hddr hddr hddr xxxx xxxx xxxx xxxx xxxx xxxx xxxx yyyy yyyy'
+			'hddr hddr hddr xxxx xxxx xxxx xxxx xxxx xxxx xxxx yyyy yyyy'
+			'navi navi navi navi navi navi navi navi navi navi lang lang'
+			'info info info info info info info info info info info info'
+			'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
+			'tckt tckt tckt tckt tckt tckt accm accm accm accm accm accm'
+			'pass pass pass pass pass pass pass pass pass pass pass pass'
+			'spcl spcl spcl spcl spcl spcl spcl spcl spcl spcl spcl spcl'
+			'smph smph smph smph smph smph smph smph smph smph smph smph'
+			'foot foot foot foot foot foot foot foot foot foot foot foot';
+		grid-gap: 10px;
+		background-color: red;
 	}
 }
 /*Tablet-------------------------------------*/
 @media only screen and (min-width: 401px) and (max-width: 1280px){
 	.grid-container-index {
 		display: grid;
-		grid-template-columns: repeat(8, 12.5%);
+		grid-template-columns: repeat(12, 1fr);
 		grid-template-areas:
-		'header header header header header searchBar searchBar language'
-		'nav nav nav nav nav nav nav nav'
-		'miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
-			'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
-			'buyTickets buyTickets buyTickets buyTickets bookAccommodation bookAccommodation bookAccommodation bookAccommodation'
-			'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
-			'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
-			'footer footer footer footer footer footer footer footer';
-		grid-gap: 1px;
+			'hddr hddr navi navi navi navi navi navi navi navi lang lang'
+			'hddr hddr xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx'
+			'info info info info info info info info info info srch srch'
+			'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
+			'spcl spcl spcl spcl tckt tckt tckt tckt accm accm accm accm'
+			'spcl spcl spcl spcl pass pass pass pass pass pass pass pass'
+			'spcl spcl spcl spcl smph smph smph smph smph smph smph smph'
+			'foot foot foot foot foot foot foot foot foot foot foot foot';
+		grid-gap: 10px;
 		background-color: white;
 	}
 }
@@ -127,16 +215,16 @@ footer li {
 @media only screen and (min-width: 1281px) {
 	.grid-container-index {
 		display: grid;
-		grid-template-columns: repeat(8, 12.5%);
+		grid-template-columns: repeat(12, 1fr);
 		grid-template-areas:
-			'header nav nav nav nav searchBar searchBar language'
-			'miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo miscInfo'
-			'imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel imageCarousel'
-			'specialEvents specialEvents specialEvents specialEvents buyTickets buyTickets bookAccommodation bookAccommodation'
-			'specialEvents specialEvents specialEvents specialEvents annualPass annualPass annualPass annualPass'
-			'specialEvents specialEvents specialEvents specialEvents socialMediaPhotos socialMediaPhotos socialMediaPhotos socialMediaPhotos'
-			'footer footer footer footer footer footer footer footer';
-		grid-gap: 1px;
-		background-color: white;
+			'hddr navi navi navi navi navi navi navi navi navi lang lang'
+			'info info info info info info info info info info srch srch'
+			'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
+			'spcl spcl spcl spcl tckt tckt tckt tckt accm accm accm accm'
+			'spcl spcl spcl spcl pass pass pass pass pass pass pass pass'
+			'spcl spcl spcl spcl smph smph smph smph smph smph smph smph'
+			'foot foot foot foot foot foot foot foot foot foot foot foot';
+		grid-gap: 10px;
+		/*background-color: blue;*/
 	}
-}
+} 
