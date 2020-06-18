@@ -2,6 +2,7 @@ window.onload = function () {
     //initialize swiper when document ready
     new Swiper('.swiper-container', {
         direction: 'horizontal',
+        centeredSlides: true,
         // go back to first slide after last slide
         loop: true,
 
