@@ -97,6 +97,7 @@ nav a.active {
 	background-color: #0169A4;
 	color: white;
 	grid-area: spcl;
+
 }
 #buyTickets {
 	justify-self: center;
@@ -192,6 +193,12 @@ footer a {
 		grid-gap: 3px;
 		background-color: white;
 	}
+	/* temp for display only */  
+	.grid-container-index > div {
+		background-color: pink;
+		padding: 2px;
+	/* end temp */
+	}	
 }
 /*Tablet-------------------------------------*/
 @media only screen and (min-width: 401px) and (max-width: 1280px){
@@ -210,6 +217,12 @@ footer a {
 		grid-gap: 5px;
 		background-color: white;
 	}
+	/* temp for display only */
+	.grid-container-index > div {
+		background-color: lightgreen;
+		padding: 2px;
+	/* end temp */
+	}	
 }
 /*Desktop-------------------------------------*/
 @media only screen and (min-width: 1281px) {
