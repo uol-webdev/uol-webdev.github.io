@@ -7,7 +7,8 @@
 	font-weight: normal;
 	}
 }
-html, body {
+
+body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -19,6 +20,7 @@ html, body {
 	border: 2px dashed whitesmoke;	
 }
 end temp code to see containers */
+
 .grid-container-index {
 	background-image: url("../img/splash-water.jpg");
 	background-position: center;
@@ -30,6 +32,7 @@ end temp code to see containers */
 header {
 	grid-area: hddr;
 }
+
 #logo {
 	max-width: 100%;
 	width=100;
@@ -67,10 +70,12 @@ nav a.active {
 #searchBar {
 	grid-area: srch;
 }
+
 #searchIcon {
 	max-width: 4%;
 	height: auto;
 }
+
 #language {
 	justify-self: start;
 	grid-area: lang;
@@ -80,45 +85,50 @@ nav a.active {
 	margin: 20px 30px;
 	background-color: #0169A4;
 	color: white;
-		border: 3px solid #38ADCE;
+	border: 3px solid #38ADCE;
 	font-size: 1.25em;
-
 	font-weight: bold;
 	grid-area: info;
 }
+
 #imageCarousel {
 	grid-area: crsl;
 }
+
 #imageCarousel .swiper-container {
 	width: 100%; 
 	height: 400px;
 	}
 
-	#specialEvents {
-background-color: #0169A4;
-color: white;
+#specialEvents {
+	background-color: #0169A4;
+	color: white;
 	grid-area: spcl;
-
 }
+
 #buyTickets {
 	justify-self: center;
 	grid-area: tckt;
 }
+
 #bookAccommodation {
 	justify-self: center;
 	grid-area: accm;
 }
+
 #annualPass {
 	background-color: #0169A4;
 	color: white;
-		justify-self: center;
+	justify-self: center;
 	grid-area: pass;
 }
+
 #socialMediaPhotos {
 	background-color: #0169A4;
 	color: white;
 		grid-area: smph;
 }
+
 .smPic {
 	padding: 5px 5px;
 }
@@ -135,15 +145,6 @@ color: white;
 	font-size: 16px;
   }
 
-  /*
-footer {
-	font-size: 1.3em;
-	grid-area: foot;
-}
-footer li {
-	display: inline;
-}
-*/
 footer {
 	justify-self: center;
 	font-size: 1.3em;
@@ -172,8 +173,7 @@ footer a {
 	color: white;
   }
 
-
-/*Mobile-------------------------------------*/
+/* Define layout for: MOBILE */
 @media only screen and (max-width: 400px)
 {
 	.grid-container-index {
@@ -194,14 +194,9 @@ footer a {
 		grid-gap: 3px;
 		background-color: white;
 	}
-	/* temp for display only */  
-	.grid-container-index > div {
-		background-color: pink;
-		padding: 2px;
-	/* end temp */
-	}	
 }
-/*Tablet-------------------------------------*/
+
+/* Define layout for: TABLET */
 @media only screen and (min-width: 401px) and (max-width: 1280px){
 	.grid-container-index {
 		display: grid;
@@ -218,14 +213,9 @@ footer a {
 		grid-gap: 5px;
 		background-color: white;
 	}
-	/* temp for display only */
-	.grid-container-index > div {
-		background-color: lightgreen;
-		padding: 2px;
-	/* end temp */
-	}	
 }
-/*Desktop-------------------------------------*/
+
+/* Define layout for: DESKTOP */
 @media only screen and (min-width: 1281px) {
 	.grid-container-index {
 		display: grid;
