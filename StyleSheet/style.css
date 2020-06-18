@@ -234,6 +234,6 @@ footer a {
 			'spcl spcl spcl spcl smph smph smph smph smph smph smph smph'
 			'foot foot foot foot foot foot foot foot foot foot foot foot';
 		grid-gap: 10px;
-		/*background-color: blue;*/
+		background-color: white;
 	}
 }
