@@ -15,7 +15,8 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
   }
 
-/*temp code to see containers 
+
+/*temp code to see containers
 * {
 	border: 2px dashed whitesmoke;	
 }
@@ -35,7 +36,6 @@ header {
 
 #logo {
 	max-width: 100%;
-	width=100;
 	height: auto;
 }
 
@@ -43,9 +43,8 @@ nav {
 	justify-self: center;
 	font-size: 1.3em;
 	grid-area: navi;
-	overflow: hidden;
+	overflow: visi;
 	background-color: #38ADCE;
-	height: 40%;
 }
 
 nav a {
@@ -63,16 +62,18 @@ nav a:hover {
   }
   
 nav a.active {
-	background-color: #0169A4;
+	background-color: midnightblue;
 	color: white;
   }
 
 #searchBar {
+	align-self: center;
 	grid-area: srch;
 }
 
 #searchIcon {
-	max-width: 4%;
+	max-width: 10%;
+	background-color: white;
 	height: auto;
 }
 
@@ -83,7 +84,7 @@ nav a.active {
 
 #miscInfo {
 	margin: 20px 30px;
-	background-color: #0169A4;
+	background-color: midnightblue;
 	color: white;
 	border: 3px solid #38ADCE;
 	font-size: 1.25em;
@@ -97,11 +98,11 @@ nav a.active {
 
 #imageCarousel .swiper-container {
 	width: 100%; 
-	height: 400px;
+	height: 600px;
 	}
 
 #specialEvents {
-	background-color: #0169A4;
+	background-color: midnightblue;
 	color: white;
 	grid-area: spcl;
 }
@@ -117,14 +118,13 @@ nav a.active {
 }
 
 #annualPass {
-	background-color: #0169A4;
+	background-color: midnightblue;
 	color: white;
-	justify-self: center;
 	grid-area: pass;
 }
 
 #socialMediaPhotos {
-	background-color: #0169A4;
+	background-color: midnightblue;
 	color: white;
 		grid-area: smph;
 }
@@ -134,7 +134,7 @@ nav a.active {
 }
 
 .button {
-	background-color: #0169A4;
+	background-color: midnightblue;
 	border-radius: 25px;
 	border: none;
 	color: white;
@@ -169,7 +169,7 @@ footer a {
   }
   
   footer a.active {
-	background-color: #0169A4;
+	background-color: midnightblue;
 	color: white;
   }
 
@@ -180,9 +180,9 @@ footer a {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-areas:
-			'hddr hddr hddr xxxx xxxx xxxx xxxx xxxx xxxx xxxx srch srch'
-			'hddr hddr hddr xxxx xxxx xxxx xxxx xxxx xxxx xxxx yyyy yyyy'
-			'hddr hddr hddr xxxx xxxx xxxx xxxx xxxx xxxx xxxx yyyy yyyy'
+			'hddr hddr hddr .    .    .    .    .    .    .    srch srch'
+			'hddr hddr hddr .    .    .    .    .    .    .    .    .   '
+			'hddr hddr hddr .    .    .    .    .    .    .    .    .   '
 			'navi navi navi navi navi navi navi navi navi navi lang lang'
 			'info info info info info info info info info info info info'
 			'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
@@ -191,7 +191,7 @@ footer a {
 			'spcl spcl spcl spcl spcl spcl spcl spcl spcl spcl spcl spcl'
 			'smph smph smph smph smph smph smph smph smph smph smph smph'
 			'foot foot foot foot foot foot foot foot foot foot foot foot';
-		grid-gap: 3px;
+		grid-gap: 10px 15px;
 		background-color: white;
 	}
 }
@@ -203,14 +203,14 @@ footer a {
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-areas:
 			'hddr hddr navi navi navi navi navi navi navi navi lang lang'
-			'hddr hddr xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx'
+			'hddr hddr .    .    .    .    .    .    .    .    .    .   '
 			'info info info info info info info info info info srch srch'
 			'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
-			'spcl spcl spcl spcl tckt tckt tckt tckt accm accm accm accm'
+			'.    .    .    .    tckt tckt tckt tckt accm accm accm accm'
 			'spcl spcl spcl spcl pass pass pass pass pass pass pass pass'
 			'spcl spcl spcl spcl smph smph smph smph smph smph smph smph'
 			'foot foot foot foot foot foot foot foot foot foot foot foot';
-		grid-gap: 5px;
+		grid-gap: 20px 50px;
 		background-color: white;
 	}
 }
@@ -221,13 +221,14 @@ footer a {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-areas:
-			'hddr navi navi navi navi navi navi navi navi navi lang lang'
-			'info info info info info info info info info info srch srch'
+			'hddr hddr navi navi navi navi navi navi navi navi lang lang'
+			'hddr hddr info info info info info info info info srch srch'
 			'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
 			'spcl spcl spcl spcl tckt tckt tckt tckt accm accm accm accm'
 			'spcl spcl spcl spcl pass pass pass pass pass pass pass pass'
 			'spcl spcl spcl spcl smph smph smph smph smph smph smph smph'
 			'foot foot foot foot foot foot foot foot foot foot foot foot';
-		grid-gap: 10px;
+		grid-gap: 30px 75px;
 		background-color: white;
 	}
+}
