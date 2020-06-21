@@ -141,7 +141,6 @@ nav a.active {
 }
 
 #attractions {
-	border: 2px red solid;
 	grid-area: atrs;
 	text-align: center;
 }
