@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jalaya</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Jalaya - Attractions">
+    <meta name="author" content="#web-development-2-rsd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Jalaya ThemePark">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+</head>
+
+<body class="test-mode">
+    <div class="grid-container-attractions">
+        <header>
+            <object id="logo" data="img/waterpark-logo.png">
+                Jalaya
+            </object>
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="attractions.html" class="active">Attractions</a>
+            <a href="index.html">Book Tickets</a>
+            <a href="bookAccommodation.html">Book Accommodation</a>
+        </nav>
+
+        <div id="searchBar">
+            <a input type="text" id="searchtext" /></a>
+            <a><object id="searchIcon" data="img/search.svg">
+                Search
+            </object></a>
+        </div>
+
+        <div id="language">
+            <button type="button" class="button">Language</button>
+        </div>
+
+        <div id="miscInfo">
+            <p>COVID-19 Info: Wear a mask, wash your hands, social distance!</p>
+        </div>
+
+
+        <div id="attractionsFilter">
+            <div class="filter">
+                <label for="attraction-type">Type:</label>
+                <select id="attraction-type">
+                    <option value="">All</option>
+                    <option value="roller-coaster">Roller coaster</option>
+                    <option value="splash-slide">Splash slide</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="attraction-age">Age:</label>
+                <select id="attraction-age">
+                    <option value="">All</option>
+                    <option value="family">Family</option>
+                    <option value="kids">Kids</option>
+                    <option value="adults">Adults only</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="attraction-intensity">Intensity:</label>
+                <select id="attraction-intensity">
+                    <option value="">All</option>
+                    <option value="slow">Slow</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="for-the-bravest">For the bravest</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="buyTickets">
+            <button type="button" class="button">Buy Tickets</button>
+        </div>
+
+        <div id="attractions">
+            <div class="attraction" data-type="roller-coaster" data-age="adults" data-intensity="moderate">
+                Attraction 1:<br>
+                Roller Coaster<br>
+                Adults<br>
+                Moderate
+            </div>
+            <div class="attraction" data-type="splash-slide" data-age="adults" data-intensity="moderate">
+                Attraction 2:<br>
+                Splash Slide<br>
+                Adults<br>
+                Moderate
+            </div>
+            <div class="attraction" data-type="roller-coaster" data-age="family" data-intensity="slow">
+                Attraction 3:<br>
+                Roller Coaster<br>
+                Family<br>
+                Slow
+            </div>
+            <div class="attraction" data-type="splash-slide" data-age="adults" data-intensity="slow">
+                Attraction 4:<br>
+                Splash Slide<br>
+                Adults<br>
+                Slow
+            </div>
+            <div class="attraction" data-type="roller-coaster" data-age="adults" data-intensity="for-the-bravest">
+                Attraction 5:<br>
+                Roller Coaster<br>
+                Adults<br>
+                For the bravest
+            </div>
+            <div class="attraction" data-type="roller-coaster" data-age="kids" data-intensity="slow">
+                Attraction 6:<br>
+                Roller Coaster<br>
+                Kids<br>
+                Slow
+            </div>
+            <div class="attraction" data-type="splash-slide" data-age="family" data-intensity="moderate">
+                Attraction 7:<br>
+                Splash Slide<br>
+                Family<br>
+                Moderate
+            </div>
+            <div class="attraction" data-type="splash-slide" data-age="kids" data-intensity="moderate">
+                Attraction 8:<br>
+                Splash Slide<br>
+                Kids<br>
+                Moderate
+            </div>
+            <div class="attraction" data-type="roller-coaster" data-age="adults" data-intensity="moderate">
+                Attraction 9:<br>
+                Roller Coaster<br>
+                Adults<br>
+                Moderate
+            </div>
+            <div class="attraction" data-type="splash-slide" data-age="family" data-intensity="moderate">
+                Attraction 10:<br>
+                Splash Slide<br>
+                Family<br>
+                Moderate
+            </div>
+            <div class="attraction" data-type="splash-slide" data-age="adults" data-intensity="for-the-bravest">
+                Attraction 11:<br>
+                Splash Slide<br>
+                Adults<br>
+                For the bravest
+            </div>
+            <div class="attraction" data-type="roller-coaster" data-age="kids" data-intensity="slow">
+                Attraction 12:<br>
+                Roller Coaster<br>
+                Kids<br>
+                Slow
+            </div>
+        </div>
+
+        <footer>
+            <a href="index.html">Contact</a>
+            <a href="index.html">About Us</a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img class="smLogo" src="img/facebook-logo-med.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img class="smLogo" src="img/instagram-logo-med.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img class="smLogo" src="img/youtube-logo-med.png" alt="YouTube"></a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img class="smLogo" src="img/twitter-logo-med.png" alt="Twitter"></a>
+            <a href="index.html">Legal Info</a>
+        </footer>
+    </div>
+</body>
+
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="Script/main.js"></script>
+
+</html>

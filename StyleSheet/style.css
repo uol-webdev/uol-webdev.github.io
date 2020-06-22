@@ -29,6 +29,14 @@ end temp code to see containers */
 	position: relative;
 }
 
+.grid-container-attractions {
+	background-image: url("../img/splash-water.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
 header {
 	grid-area: hddr;
 }
@@ -65,6 +73,7 @@ nav{
   }
 
 #searchBar {
+	align-self: center;
 	grid-area: srch;
     padding:0 0 0 20px;
     margin:0 20px;
@@ -139,6 +148,39 @@ nav{
 		grid-area: smph;
 }
 
+#attractionsFilter {
+	grid-area: atfl;
+}
+
+#attractions {
+	grid-area: atrs;
+	text-align: center;
+}
+.attraction {
+	background-color: lavender;
+	text-align: left;
+	grid-area: attr;
+	margin: 1em .5em;
+	font-size: 18px;
+	display: inline-block;
+	height: 10em;
+	float: left;
+	padding: 1em;
+	line-height: 1.5em;
+}
+
+#attractionsFilter {
+	text-align: center;
+	background-color: midnightblue;
+	color: #f2f2f2;
+	height: 3em;
+}
+#attractionsFilter .filter {
+	width: 30%;
+	display: inline-block;
+	line-height: 3em;
+}
+
 .smPic {
 	padding: 5px 5px;
 }
@@ -177,7 +219,7 @@ footer {
 	}
 }
 
-/* Define Attractions layout for: DESKTOP */
+/* Define Home Page layout for: DESKTOP */
 @media only screen and (min-width: 1281px) {
 	.grid-container-attractions {
 		display: grid;
