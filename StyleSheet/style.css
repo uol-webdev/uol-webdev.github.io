@@ -6,7 +6,6 @@
 	font-variant: normal;
 	font-weight: normal;
 	}
-}
 
 body {
 	width: 100%;
@@ -64,8 +63,6 @@ nav{
 	background-color: midnightblue;
 	color: white;
   }
-
-
 
 #searchBar {
 	grid-area: srch;
@@ -162,50 +159,7 @@ footer {
 	grid-area: foot;
 }
 
-
-/* Define layout for: MOBILE */
-@media only screen and (max-width: 400px)
-{
-	.grid-container-index {
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-areas:
-			'hddr hddr hddr .    .    .    .    .    .    .    srch srch'
-			'hddr hddr hddr .    .    .    .    .    .    .    .    .   '
-			'hddr hddr hddr .    .    .    .    .    .    .    .    .   '
-			'navi navi navi navi navi navi navi navi navi navi lang lang'
-			'info info info info info info info info info info info info'
-			'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
-			'tckt tckt tckt tckt tckt tckt accm accm accm accm accm accm'
-			'pass pass pass pass pass pass pass pass pass pass pass pass'
-			'spcl spcl spcl spcl spcl spcl spcl spcl spcl spcl spcl spcl'
-			'smph smph smph smph smph smph smph smph smph smph smph smph'
-			'foot foot foot foot foot foot foot foot foot foot foot foot';
-		grid-gap: 10px 15px;
-		background-color: white;
-	}
-}
-
-/* Define layout for: TABLET */
-@media only screen and (min-width: 401px) and (max-width: 1280px){
-	.grid-container-index {
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-areas:
-			'hddr hddr navi navi navi navi navi navi navi navi lang lang'
-			'hddr hddr .    .    .    .    .    .    .    .    .    .   '
-			'info info info info info info info info info info srch srch'
-			'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
-			'.    .    .    .    tckt tckt tckt tckt accm accm accm accm'
-			'spcl spcl spcl spcl pass pass pass pass pass pass pass pass'
-			'spcl spcl spcl spcl smph smph smph smph smph smph smph smph'
-			'foot foot foot foot foot foot foot foot foot foot foot foot';
-		grid-gap: 20px 50px;
-		background-color: white;
-	}
-}
-
-/* Define layout for: DESKTOP */
+/* Define Index layout for: DESKTOP */
 @media only screen and (min-width: 1281px) {
 	.grid-container-index {
 		display: grid;
@@ -220,5 +174,24 @@ footer {
 			'foot foot foot foot foot foot foot foot foot foot foot foot';
 		grid-gap: 30px 75px;
 		background-color: white;
+	}
+}
+
+/* Define Attractions layout for: DESKTOP */
+@media only screen and (min-width: 1281px) {
+	.grid-container-attractions {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-areas:
+			'hddr hddr navi navi navi navi navi navi navi navi lang lang'
+			'hddr hddr info info info info info info info info srch srch'
+			'atfl atfl atfl atfl atfl atfl atfl atfl atfl tckt tckt .   '
+			'atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs'
+			'foot foot foot foot foot foot foot foot foot foot foot foot';
+		grid-gap: 30px 75px;
+		background-color: white;
+	}
+	.attraction {
+		width: 23%;
 	}
 }
