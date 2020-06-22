@@ -6,7 +6,6 @@
 	font-variant: normal;
 	font-weight: normal;
 	}
-}
 
 body {
 	width: 100%;
@@ -30,6 +29,14 @@ end temp code to see containers */
 	position: relative;
 }
 
+.grid-container-attractions {
+	background-image: url("../img/splash-water.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
 header {
 	grid-area: hddr;
 }
@@ -43,7 +50,7 @@ nav {
 	justify-self: center;
 	font-size: 1.3em;
 	grid-area: navi;
-	overflow: visi;
+	overflow: visible;
 	background-color: #38ADCE;
 }
 
@@ -129,6 +136,39 @@ nav a.active {
 		grid-area: smph;
 }
 
+#attractionsFilter {
+	grid-area: atfl;
+}
+
+#attractions {
+	grid-area: atrs;
+	text-align: center;
+}
+.attraction {
+	background-color: lavender;
+	text-align: left;
+	grid-area: attr;
+	margin: 1em .5em;
+	font-size: 18px;
+	display: inline-block;
+	height: 10em;
+	float: left;
+	padding: 1em;
+	line-height: 1.5em;
+}
+
+#attractionsFilter {
+	text-align: center;
+	background-color: midnightblue;
+	color: #f2f2f2;
+	height: 3em;
+}
+#attractionsFilter .filter {
+	width: 30%;
+	display: inline-block;
+	line-height: 3em;
+}
+
 .smPic {
 	padding: 5px 5px;
 }
@@ -173,7 +213,7 @@ footer a {
 	color: white;
   }
 
-/* Define layout for: MOBILE */
+/* Define Home Page layout for: MOBILE */
 @media only screen and (max-width: 400px)
 {
 	.grid-container-index {
@@ -196,7 +236,7 @@ footer a {
 	}
 }
 
-/* Define layout for: TABLET */
+/* Define Home Page layout for: TABLET */
 @media only screen and (min-width: 401px) and (max-width: 1280px){
 	.grid-container-index {
 		display: grid;
@@ -215,7 +255,7 @@ footer a {
 	}
 }
 
-/* Define layout for: DESKTOP */
+/* Define Home Page layout for: DESKTOP */
 @media only screen and (min-width: 1281px) {
 	.grid-container-index {
 		display: grid;
@@ -230,5 +270,68 @@ footer a {
 			'foot foot foot foot foot foot foot foot foot foot foot foot';
 		grid-gap: 30px 75px;
 		background-color: white;
+	}
+}
+
+
+/* Define Attractions layout for: MOBILE */
+@media only screen and (max-width: 400px)
+{
+	.grid-container-attractions {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-areas:
+			'hddr hddr hddr .    .    .    .    .    .    .    srch srch'
+			'hddr hddr hddr .    .    .    .    .    .    .    .    .   '
+			'hddr hddr hddr .    .    .    .    .    .    .    .    .   '
+			'navi navi navi navi navi navi navi navi navi navi lang lang'
+			'info info info info info info info info info info info info'
+			'tckt tckt tckt tckt tckt tckt tckt tckt tckt tckt tckt tckt'
+			'atfl atfl atfl atfl atfl atfl atfl atfl atfl atfl atfl atfl'
+			'atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs'
+			'foot foot foot foot foot foot foot foot foot foot foot foot';
+		grid-gap: 10px 15px;
+		background-color: white;
+	}
+	.attraction {
+		width: 47%;
+	}
+}
+
+/* Define Attractions layout for: TABLET */
+@media only screen and (min-width: 401px) and (max-width: 1280px){
+	.grid-container-attractions {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-areas:
+			'hddr hddr navi navi navi navi navi navi navi navi lang lang'
+			'hddr hddr .    .    .    .    .    .    .    .    .    .   '
+			'atfl atfl atfl atfl atfl atfl atfl atfl tckt tckt tckt tckt'
+			'atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs'
+			'foot foot foot foot foot foot foot foot foot foot foot foot';
+		grid-gap: 20px 50px;
+		background-color: white;
+	}
+	.attraction {
+		width: 31%;
+	}
+}
+
+/* Define Attractions layout for: DESKTOP */
+@media only screen and (min-width: 1281px) {
+	.grid-container-attractions {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-areas:
+			'hddr hddr navi navi navi navi navi navi navi navi lang lang'
+			'hddr hddr info info info info info info info info srch srch'
+			'atfl atfl atfl atfl atfl atfl atfl atfl atfl tckt tckt .   '
+			'atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs'
+			'foot foot foot foot foot foot foot foot foot foot foot foot';
+		grid-gap: 30px 75px;
+		background-color: white;
+	}
+	.attraction {
+		width: 23%;
 	}
 }
