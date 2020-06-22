@@ -123,11 +123,12 @@ button:hover {
 	font-weight: bold;
 	grid-area: info;
 	padding: 5px;
-	animation: pulse 6s infinite;}
+	animation: pulse 6s infinite;
+}
 
 @keyframes pulse {
 	0% {
-	  box-shadow: 0 0 0 0px rgba(42, 141, 169, 0.6);
+		box-shadow: 0 0 0 0px rgba(42, 141, 169, 0.6);
 	}
 	50% {
 		box-shadow: 0 0 0 10px rgba(42, 141, 169, 0.1);
@@ -135,7 +136,7 @@ button:hover {
 	100% {
 		box-shadow: 0 0 0 0 rgba(42, 141, 169, 0);
 	}
-  }
+}
 
 .button {
 	background-color: #2a8da9;
@@ -239,38 +240,32 @@ footer {
 	width: 23%;
 }
 
-/* Define Index layout for: DESKTOP */
-@media only screen and (min-width: 1281px) {
-	.grid-container-index {
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-areas:
-			'hddr hddr navi navi navi navi navi navi srch srch lang lang'
-			'hddr hddr info info info info info info info info info info'
-			'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
-			'spcl spcl spcl spcl tckt tckt tckt tckt accm accm accm accm'
-			'spcl spcl spcl spcl pass pass pass pass pass pass pass pass'
-			'spcl spcl spcl spcl smph smph smph smph smph smph smph smph'
-			'foot foot foot foot foot foot foot foot foot foot foot foot';
-		grid-gap: 30px 75px;
-		padding: 10px;
-		background-color: white;
-	}
+.grid-container-index {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-areas:
+		'hddr hddr navi navi navi navi navi navi srch srch lang lang'
+		'hddr hddr info info info info info info info info info info'
+		'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
+		'spcl spcl spcl spcl tckt tckt tckt tckt accm accm accm accm'
+		'spcl spcl spcl spcl pass pass pass pass pass pass pass pass'
+		'spcl spcl spcl spcl smph smph smph smph smph smph smph smph'
+		'foot foot foot foot foot foot foot foot foot foot foot foot';
+	grid-gap: 30px 75px;
+	padding: 10px;
+	background-color: white;
 }
 
-/* Define Attractions Page layout for: DESKTOP */
-@media only screen and (min-width: 1281px) {
-	.grid-container-attractions {
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-areas:
-			'hddr hddr navi navi navi navi navi navi srch srch lang lang'
-			'hddr hddr info info info info info info info info info info'
-			'atfl atfl atfl atfl atfl atfl atfl atfl atfl tckt tckt .   '
-			'atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs'
-			'foot foot foot foot foot foot foot foot foot foot foot foot';
-		grid-gap: 30px 75px;
-		padding: 10px;
-		background-color: white;
-	}
+.grid-container-attractions {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-areas:
+		'hddr hddr navi navi navi navi navi navi srch srch lang lang'
+		'hddr hddr info info info info info info info info info info'
+		'atfl atfl atfl atfl atfl atfl atfl atfl atfl tckt tckt .   '
+		'atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs'
+		'foot foot foot foot foot foot foot foot foot foot foot foot';
+	grid-gap: 30px 75px;
+	padding: 10px;
+	background-color: white;
 }
