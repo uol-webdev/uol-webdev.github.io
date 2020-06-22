@@ -233,6 +233,7 @@ footer {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-areas:
+
 			'hddr hddr navi navi navi navi navi navi srch srch lang lang'
 			'hddr hddr info info info info info info info info info info'
 			'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
