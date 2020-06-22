@@ -72,6 +72,8 @@ nav{
 	color: white;
   }
 
+
+
 #searchBar {
 	align-self: center;
 	grid-area: srch;
@@ -199,6 +201,7 @@ nav{
 
 footer {
 	grid-area: foot;
+
 }
 
 /* Define Index layout for: DESKTOP */
@@ -219,7 +222,7 @@ footer {
 	}
 }
 
-/* Define Home Page layout for: DESKTOP */
+/* Define Attractions Page layout for: DESKTOP */
 @media only screen and (min-width: 1281px) {
 	.grid-container-attractions {
 		display: grid;
