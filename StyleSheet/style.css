@@ -6,7 +6,6 @@
 	font-variant: normal;
 	font-weight: normal;
 	}
-}
 
 body {
 	width: 100%;
@@ -23,6 +22,14 @@ body {
 end temp code to see containers */
 
 .grid-container-index {
+	background-image: url("../img/splash-water.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.grid-container-attractions {
 	background-image: url("../img/splash-water.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -68,6 +75,7 @@ nav{
 
 
 #searchBar {
+	align-self: center;
 	grid-area: srch;
     padding:0 0 0 20px;
     margin:0 20px;
@@ -142,6 +150,39 @@ nav{
 		grid-area: smph;
 }
 
+#attractionsFilter {
+	grid-area: atfl;
+}
+
+#attractions {
+	grid-area: atrs;
+	text-align: center;
+}
+.attraction {
+	background-color: lavender;
+	text-align: left;
+	grid-area: attr;
+	margin: 1em .5em;
+	font-size: 18px;
+	display: inline-block;
+	height: 10em;
+	float: left;
+	padding: 1em;
+	line-height: 1.5em;
+}
+
+#attractionsFilter {
+	text-align: center;
+	background-color: midnightblue;
+	color: #f2f2f2;
+	height: 3em;
+}
+#attractionsFilter .filter {
+	width: 30%;
+	display: inline-block;
+	line-height: 3em;
+}
+
 .smPic {
 	padding: 5px 5px;
 }
@@ -162,8 +203,7 @@ footer {
 	grid-area: foot;
 }
 
-
-/* Define layout for: MOBILE */
+/* Define Home Page layout for: MOBILE */
 @media only screen and (max-width: 400px)
 {
 	.grid-container-index {
@@ -186,7 +226,7 @@ footer {
 	}
 }
 
-/* Define layout for: TABLET */
+/* Define Home Page layout for: TABLET */
 @media only screen and (min-width: 401px) and (max-width: 1280px){
 	.grid-container-index {
 		display: grid;
@@ -205,7 +245,7 @@ footer {
 	}
 }
 
-/* Define layout for: DESKTOP */
+/* Define Home Page layout for: DESKTOP */
 @media only screen and (min-width: 1281px) {
 	.grid-container-index {
 		display: grid;
