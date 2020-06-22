@@ -1,3 +1,5 @@
+/* common page styling */
+
 * {
 	box-sizing: border-box;
 
@@ -21,6 +23,7 @@ body {
 }
 end temp code to see containers */
 
+/* Remove background image
 .grid-container-index {
 	background-image: url("../img/splash-water.jpg");
 	background-position: center;
@@ -36,6 +39,7 @@ end temp code to see containers */
 	background-size: cover;
 	position: relative;
 }
+*/
 
 header {
 	grid-area: hddr;
@@ -51,7 +55,7 @@ nav{
 }
 .bar {
 	font-size: 1.3em;
-	background-color: #38ADCE;
+	background-color: #2A8DA9;
 }
 
 .bar a {
@@ -67,35 +71,42 @@ nav{
 	outline-width: 1px;
   }
   
-.bar a.active {
-	background-color: midnightblue;
-	color: white;
+
+
+
+
+
+
+
+
+
+
+
+  input[type="text"] {
+	width: 200px;
+	height: 40px;
+	border: 2px solid #aaa;
+	border-radius: 4px;
+	margin: 8px 0;
+	outline: none;
+	padding: 8px;
+	box-sizing: border-box;
+	transition: 0.3s;
+  }
+  
+  input[type="text"]:focus {
+	border-color: dodgerBlue;
+	box-shadow: 0 0 8px 0 dodgerBlue;
   }
 
+  #searchBox {
+	  grid-area: srch;
+    background: white url(../img/search-sm.png) left no-repeat;
+    padding-left: 40px;
+}
 
 
-#searchBar {
-	align-self: center;
-	grid-area: srch;
-    padding:0 0 0 20px;
-    margin:0 20px;
-    background:#ddd;
-    direction: rtl;
-    width: 200px;
-}
-#searchBox {
-    height:20px;
-    margin:0;
-    padding-right: 30px;
-    width: 100%;
-}
-#searchIcon {
-    position:absolute;
-    bottom:2px;
-    right:5px;
-    width:24px;
-    height:24px;
-}
+
 
 
 #language {
@@ -104,14 +115,37 @@ nav{
 }
 
 #miscInfo {
-	background-color: midnightblue;
+	background-color: #2CBADB;
 	color: white;
-	border: 3px solid red;
+/*	border: 3px solid red; */
 	text-align: center;
 	font-size: 1.3em;
 	font-weight: bold;
 	grid-area: info;
 }
+
+
+.button {
+	background-color: #2A8DA9;
+	border-radius: 25px;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+  }
+
+footer {
+	grid-area: foot;
+}
+
+
+
+
+
+/* index page styling */
 
 #imageCarousel {
 	grid-area: crsl;
@@ -123,7 +157,7 @@ nav{
 	}
 
 #specialEvents {
-	background-color: midnightblue;
+	background-color: #2A8DA9;
 	color: white;
 	grid-area: spcl;
 }
@@ -139,16 +173,22 @@ nav{
 }
 
 #annualPass {
-	background-color: midnightblue;
+	background-color: #2A8DA9;
 	color: white;
 	grid-area: pass;
 }
 
 #socialMediaPhotos {
-	background-color: midnightblue;
+	background-color: #2A8DA9;
 	color: white;
 		grid-area: smph;
 }
+
+
+
+
+
+/* attractions page styling */
 
 #attractionsFilter {
 	grid-area: atfl;
@@ -173,7 +213,7 @@ nav{
 
 #attractionsFilter {
 	text-align: center;
-	background-color: midnightblue;
+	background-color: #2A8DA9;
 	color: #f2f2f2;
 	height: 3em;
 }
@@ -187,31 +227,15 @@ nav{
 	padding: 5px 5px;
 }
 
-.button {
-	background-color: midnightblue;
-	border-radius: 25px;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-  }
-
-footer {
-	grid-area: foot;
-
-}
-
 /* Define Index layout for: DESKTOP */
 @media only screen and (min-width: 1281px) {
 	.grid-container-index {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-areas:
-			'hddr hddr navi navi navi navi navi navi navi navi lang lang'
-			'hddr hddr info info info info info info info info srch srch'
+
+			'hddr hddr navi navi navi navi navi navi srch srch lang lang'
+			'hddr hddr info info info info info info info info info info'
 			'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
 			'spcl spcl spcl spcl tckt tckt tckt tckt accm accm accm accm'
 			'spcl spcl spcl spcl pass pass pass pass pass pass pass pass'
@@ -228,8 +252,8 @@ footer {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-areas:
-			'hddr hddr navi navi navi navi navi navi navi navi lang lang'
-			'hddr hddr info info info info info info info info srch srch'
+			'hddr hddr navi navi navi navi navi navi srch srch lang lang'
+			'hddr hddr info info info info info info info info info info'
 			'atfl atfl atfl atfl atfl atfl atfl atfl atfl tckt tckt .   '
 			'atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs'
 			'foot foot foot foot foot foot foot foot foot foot foot foot';
