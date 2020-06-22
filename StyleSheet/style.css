@@ -46,43 +46,57 @@ header {
 	height: auto;
 }
 
-nav {
-	justify-self: center;
-	font-size: 1.3em;
+nav{
 	grid-area: navi;
-	overflow: visible;
+}
+.bar {
+	font-size: 1.3em;
 	background-color: #38ADCE;
 }
 
-nav a {
+.bar a {
 	float: left;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
+	color: white;
+	padding: 16px 16px;
 	text-decoration: none;
-	font-size: 17px;
-  }
+	outline: solid 0px white;  }
 
-nav a:hover {
+.bar a:hover {
 	background-color: #2A8DA9;
 	color: black;
+	outline-width: 1px;
   }
   
-nav a.active {
+.bar a.active {
 	background-color: midnightblue;
 	color: white;
   }
 
+
+
 #searchBar {
 	align-self: center;
 	grid-area: srch;
+    padding:0 0 0 20px;
+    margin:0 20px;
+    background:#ddd;
+    direction: rtl;
+    width: 200px;
+}
+#searchBox {
+    height:20px;
+    margin:0;
+    padding-right: 30px;
+    width: 100%;
+}
+#searchIcon {
+    position:absolute;
+    bottom:2px;
+    right:5px;
+    width:24px;
+    height:24px;
 }
 
-#searchIcon {
-	max-width: 10%;
-	background-color: white;
-	height: auto;
-}
 
 #language {
 	justify-self: start;
@@ -90,11 +104,11 @@ nav a.active {
 }
 
 #miscInfo {
-	margin: 20px 30px;
 	background-color: midnightblue;
 	color: white;
-	border: 3px solid #38ADCE;
-	font-size: 1.25em;
+	border: 3px solid red;
+	text-align: center;
+	font-size: 1.3em;
 	font-weight: bold;
 	grid-area: info;
 }
@@ -186,32 +200,8 @@ nav a.active {
   }
 
 footer {
-	justify-self: center;
-	font-size: 1.3em;
 	grid-area: foot;
-	overflow: hidden;
-	background-color: #38ADCE;
-	height: 80%;
 }
-
-footer a {
-	float: left;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-  }
-
-  footer a:hover {
-	background-color: #2A8DA9;
-	color: black;
-  }
-  
-  footer a.active {
-	background-color: midnightblue;
-	color: white;
-  }
 
 /* Define Home Page layout for: MOBILE */
 @media only screen and (max-width: 400px)
@@ -270,68 +260,5 @@ footer a {
 			'foot foot foot foot foot foot foot foot foot foot foot foot';
 		grid-gap: 30px 75px;
 		background-color: white;
-	}
-}
-
-
-/* Define Attractions layout for: MOBILE */
-@media only screen and (max-width: 400px)
-{
-	.grid-container-attractions {
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-areas:
-			'hddr hddr hddr .    .    .    .    .    .    .    srch srch'
-			'hddr hddr hddr .    .    .    .    .    .    .    .    .   '
-			'hddr hddr hddr .    .    .    .    .    .    .    .    .   '
-			'navi navi navi navi navi navi navi navi navi navi lang lang'
-			'info info info info info info info info info info info info'
-			'tckt tckt tckt tckt tckt tckt tckt tckt tckt tckt tckt tckt'
-			'atfl atfl atfl atfl atfl atfl atfl atfl atfl atfl atfl atfl'
-			'atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs'
-			'foot foot foot foot foot foot foot foot foot foot foot foot';
-		grid-gap: 10px 15px;
-		background-color: white;
-	}
-	.attraction {
-		width: 47%;
-	}
-}
-
-/* Define Attractions layout for: TABLET */
-@media only screen and (min-width: 401px) and (max-width: 1280px){
-	.grid-container-attractions {
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-areas:
-			'hddr hddr navi navi navi navi navi navi navi navi lang lang'
-			'hddr hddr .    .    .    .    .    .    .    .    .    .   '
-			'atfl atfl atfl atfl atfl atfl atfl atfl tckt tckt tckt tckt'
-			'atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs'
-			'foot foot foot foot foot foot foot foot foot foot foot foot';
-		grid-gap: 20px 50px;
-		background-color: white;
-	}
-	.attraction {
-		width: 31%;
-	}
-}
-
-/* Define Attractions layout for: DESKTOP */
-@media only screen and (min-width: 1281px) {
-	.grid-container-attractions {
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-areas:
-			'hddr hddr navi navi navi navi navi navi navi navi lang lang'
-			'hddr hddr info info info info info info info info srch srch'
-			'atfl atfl atfl atfl atfl atfl atfl atfl atfl tckt tckt .   '
-			'atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs'
-			'foot foot foot foot foot foot foot foot foot foot foot foot';
-		grid-gap: 30px 75px;
-		background-color: white;
-	}
-	.attraction {
-		width: 23%;
 	}
 }
