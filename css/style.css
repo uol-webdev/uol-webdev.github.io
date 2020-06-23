@@ -121,6 +121,10 @@ height: auto;
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 0 0px rgba(42, 141, 169, 0.6);
+<<<<<<< HEAD:css/style.css
+=======
+
+>>>>>>> master:StyleSheet/style.css
 	}
 	50% {
 		box-shadow: 0 0 0 10px rgba(42, 141, 169, 0.1);
