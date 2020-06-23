@@ -26,11 +26,11 @@ p {
 	color: white;
 }
 
-/*temp code to see containers
-* {
+/* temp code to see containers */
+/* * {
 	border: 2px dashed whitesmoke;	
-}
-end temp code to see containers */
+} */
+/* end temp code to see containers */
 
 /* Remove background image
 .grid-container-index {
@@ -50,25 +50,19 @@ end temp code to see containers */
 }
 */
 
-header {
-	grid-area: hddr;
-}
-
-#logo {
-	max-width: 100%;
-	height: auto;
-}
-
 nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	grid-area: navi;
-}
-.bar {
 	font-size: 1.3em;
-	background-color: #2a8da9;
-}
+	background-color: #2a8da9;}
+
 
 .bar a {
-	float: left;
+	/* float: left; */
 	color: white;
 	padding: 1em 1em;
 	text-decoration: none;
@@ -91,14 +85,10 @@ input {
 	padding: 8px;
 	box-sizing: border-box;
 	transition: 0.3s;
+	max-width: 100%;
 }
 
 input:focus {
-	border-color: dodgerBlue;
-	box-shadow: 0 0 8px 0 dodgerBlue;
-}
-
-button:hover {
 	border-color: dodgerBlue;
 	box-shadow: 0 0 8px 0 dodgerBlue;
 }
@@ -109,9 +99,11 @@ button:hover {
 	padding-left: 40px;
 }
 
-#language {
-	justify-self: start;
-	grid-area: lang;
+.flag {
+	max-width: 30px;
+max-height: 30px;
+width: auto;
+height: auto;
 }
 
 #miscInfo {
@@ -129,7 +121,10 @@ button:hover {
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 0 0px rgba(42, 141, 169, 0.6);
+<<<<<<< HEAD:css/style.css
+=======
 
+>>>>>>> master:StyleSheet/style.css
 	}
 	50% {
 		box-shadow: 0 0 0 10px rgba(42, 141, 169, 0.1);
@@ -138,6 +133,14 @@ button:hover {
 		box-shadow: 0 0 0 0 rgba(42, 141, 169, 0);
 	}
 }
+
+
+.button:hover {
+	border-color: dodgerBlue;
+	box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.button:focus {outline:0;}
 
 .button {
 	background-color: #2a8da9;
@@ -151,14 +154,45 @@ button:hover {
 	font-size: 16px;
 }
 
-footer {
-	grid-area: foot;
-}
-.smPic {
+.button-sm {
 	padding: 5px 5px;
 }
 
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	grid-area: foot;
+	font-size: 1.3em;
+	background-color: #2a8da9;
+}
+
+footer div:last-child {
+	margin-left: auto;
+}
+
+img {
+	padding: 5px 5px;
+	max-width: 100%;
+}
+
+.smLogo {
+	display: block;
+	max-width: 50px;
+	max-height: 50px;
+	width: auto;
+	height: auto;
+}
+
+.references {
+	font-size: 0.5em;
+}
+
+
+
+
 /* index page styling */
+/**********************/
 
 #imageCarousel {
 	grid-area: crsl;
@@ -196,6 +230,7 @@ footer {
 	color: white;
 	grid-area: pass;
 	padding: 5px;
+	max-width: 100%;
 }
 
 #socialMediaPhotos {
@@ -206,6 +241,7 @@ footer {
 }
 
 /* attractions page styling */
+/****************************/
 
 #attractions {
 	grid-area: atrs;
@@ -243,15 +279,15 @@ footer {
 
 .grid-container-index {
 	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-template-areas:
-		'hddr hddr navi navi navi navi navi navi srch srch lang lang'
-		'hddr hddr info info info info info info info info info info'
-		'crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl crsl'
-		'spcl spcl spcl spcl tckt tckt tckt tckt accm accm accm accm'
-		'spcl spcl spcl spcl pass pass pass pass pass pass pass pass'
-		'spcl spcl spcl spcl smph smph smph smph smph smph smph smph'
-		'foot foot foot foot foot foot foot foot foot foot foot foot';
+		'navi navi navi'
+		'info info info'
+		'crsl crsl crsl'
+		'spcl tckt accm'
+		'spcl pass pass'
+		'spcl smph smph'
+		'foot foot foot';
 	grid-gap: 30px 75px;
 	padding: 10px;
 	background-color: white;
@@ -259,13 +295,13 @@ footer {
 
 .grid-container-attractions {
 	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-template-areas:
-		'hddr hddr navi navi navi navi navi navi srch srch lang lang'
-		'hddr hddr info info info info info info info info info info'
-		'atfl atfl atfl atfl atfl atfl atfl atfl atfl tckt tckt .   '
-		'atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs atrs'
-		'foot foot foot foot foot foot foot foot foot foot foot foot';
+		'navi navi navi'
+		'info info info'
+		'atfl atfl tckt'
+		'atrs atrs atrs'
+		'foot foot foot';
 	grid-gap: 30px 75px;
 	padding: 10px;
 	background-color: white;

@@ -12,32 +12,36 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
-<body class="test-mode">
+<body>
     <div class="grid-container-attractions">
-        <header>
-            <object id="logo" data="img/waterpark-logo.png">
+        <nav>
+            <object id="logo" data="img/jalaya-logo.png">
                 Jalaya
             </object>
-        </header>
-
-        <nav class="bar">
-            <a href="index.html">Home</a>
-            <a href="attractions.html" class="active">Attractions</a>
-            <a href="bookTickets.html">Book Tickets</a>
-            <a href="bookAccommodation.html">Book Accommodation</a>
+            <div class="bar">
+                <a href="index.html">Home</a>
+                <a href="attractions.html" class="active">Attractions</a>
+                <a href="futurePage.html">Buy Tickets</a>
+                <a href="bookAccommodation.html">Book Accommodation</a>
+            </div>
+            <input type="text" placeHolder="Search" id="searchBox" />
+            <div id="language">
+                <a class="button button-sm" href="futurePage.html"><img class="flag" src="img/united-kingdom.png"
+                        alt="Language English"></a>
+                <a class="button button-sm" href="futurePage.html"><img class="flag" src="img/france.png"
+                        alt="Language French"></a>
+                <a class="button button-sm" href="futurePage.html"><img class="flag" src="img/germany.png"
+                        alt="Language German"></a>
+                <a class="button button-sm" href="futurePage.html"><img class="flag" src="img/spain.png"
+                        alt="Language Spanish"></a>
+            </div>
         </nav>
 
-        <input type="text" placeHolder="Search" id="searchBox" />
-
-        <div id="language">
-            <button type="button" class="button">Language</button>
-        </div>
-
         <div id="miscInfo">
-            <p>Jalaya is pleased to announce that the park will be reopening on the 13th of July 2020. Measures have
-                been taken by us to ensure your safety by following the government’s cleanliness and sterilisation
-                recommendations and close every day between one and two to do a full venue cleanse based on recommended
-                cleansing standards.
+            <p>Jalaya is pleased to announce that the park will be reopening on the 13th of July 2020. We have taken all
+                measures to ensure your safety by following the government’s cleanliness and sterilisation
+                recommendations. We will close every day between one and two to do a full venue cleanse based on
+                recommended cleansing standards.
             </p>
         </div>
 
@@ -71,7 +75,7 @@
         </div>
 
         <div id="buyTickets">
-            <button type="button" class="button">Buy Tickets</button>
+            <a class="button" href="futurePage.html">Buy Tickets</a>
         </div>
 
         <div id="attractions">
@@ -149,23 +153,31 @@
             </div>
         </div>
 
-        <footer class="bar">
-            <a href="index.html">Contact</a>
-            <a href="index.html">About Us</a>
-            <a href="https://www.facebook.com" target="_blank">
-                <img class="smLogo" src="img/facebook-logo-med.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img class="smLogo" src="img/instagram-logo-med.png" alt="Instagram"></a>
-            <a href="https://www.youtube.com" target="_blank">
-                <img class="smLogo" src="img/youtube-logo-med.png" alt="YouTube"></a>
-            <a href="https://www.twitter.com" target="_blank">
-                <img class="smLogo" src="img/twitter-logo-med.png" alt="Twitter"></a>
-            <a href="index.html">Legal Info</a>
+        <footer>
+            <div class="bar">
+                <a href="futurePage.html">Contact</a>
+                <a href="futurePage.html">About Us</a>
+                <a href="futurePage.html">Legal Info</a>
+            </div>
+
+            <div>
+                <a class="button button-sm" href="https://www.facebook.com" target="_blank">
+                    <img class="smLogo" src="img/facebook.png" alt="Facebook"></a>
+                <a class="button button-sm" href="https://www.instagram.com" target="_blank">
+                    <img class="smLogo" src="img/Instagram.png" alt="Instagram"></a>
+                <a class="button button-sm" href="https://www.youtube.com" target="_blank">
+                    <img class="smLogo" src="img/Youtube.png" alt="YouTube"></a>
+                <a class="button button-sm" href="https://www.twitter.com" target="_blank">
+                    <img class="smLogo" src="img/Twitter.png" alt="Twitter"></a>
+            </div>
+            <div class="bar">
+                <a class="references" href="https://www.vecteezy.com/free-vector/twitter-icon">Social Media Icon Vectors
+                    by
+                    Vecteezy</a>
+            </div>
         </footer>
     </div>
 </body>
-
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="js/main.js"></script>
-
 </html>
