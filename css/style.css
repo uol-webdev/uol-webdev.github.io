@@ -163,6 +163,18 @@ input:focus {
 	font-size: 16px;
 }
 
+.button2 {
+	background-color: #0d2d36;
+	border-radius: 25px;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
 .button-sm {
 	padding: 5px 5px;
 }
@@ -283,6 +295,49 @@ img {
 	width: 23%;
 }
 
+/* attractions page styling */
+/****************************/
+
+.bookingHeader {
+	grid-area: bhdr;
+	background-color: #2a8da9;
+	color: white;
+	padding: 5px;
+}
+
+.accommodationListings {
+	grid-area: accm;
+	/* background-color: #2a8da9; */
+	color: white;
+	padding: 5px;
+}
+
+.accommodation {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #2a8da9;
+	padding: 5px;
+	margin: 5px;
+}
+
+.accommodationPrice{
+	margin-left: auto;
+	padding: 5px;
+	text-align: center;
+}
+
+.hotelPic {
+	max-width: 200px;
+	max-height: 200px;
+	width: auto;
+	height: auto;
+}
+
+/* grids */
+/*********/
+
 .grid-container-index {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -307,6 +362,20 @@ img {
 		'info info info'
 		'atfl atfl bttn'
 		'atrs atrs atrs'
+		'foot foot foot';
+	grid-gap: 10px 10px;
+	padding: 10px;
+	background-color: white;
+}
+
+.grid-container-accommodation {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		'navi navi navi'
+		'info info info'
+		'bhdr bhdr bhdr'
+		'accm accm accm'
 		'foot foot foot';
 	grid-gap: 10px 10px;
 	padding: 10px;
