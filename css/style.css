@@ -61,6 +61,13 @@ nav {
 	background-color: #2a8da9;}
 
 
+#logo {
+	max-width: 100px;
+	max-height: 100px;
+	width: auto;
+	height: auto;
+}
+
 .bar a {
 	/* float: left; */
 	color: white;
@@ -101,9 +108,9 @@ input:focus {
 
 .flag {
 	max-width: 30px;
-max-height: 30px;
-width: auto;
-height: auto;
+	max-height: 30px;
+	width: auto;
+	height: auto;
 }
 
 #miscInfo {
@@ -121,10 +128,6 @@ height: auto;
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 0 0px rgba(42, 141, 169, 0.6);
-<<<<<<< HEAD:css/style.css
-=======
-
->>>>>>> master:StyleSheet/style.css
 	}
 	50% {
 		box-shadow: 0 0 0 10px rgba(42, 141, 169, 0.1);
@@ -134,13 +137,14 @@ height: auto;
 	}
 }
 
-
 .button:hover {
 	border-color: dodgerBlue;
 	box-shadow: 0 0 8px 0 dodgerBlue;
 }
 
-.button:focus {outline:0;}
+.button:focus {
+	outline: 0;
+}
 
 .button {
 	background-color: #2a8da9;
