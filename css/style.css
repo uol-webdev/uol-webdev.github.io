@@ -58,13 +58,6 @@ nav {
 	height: auto;
 }
 
-#logo {
-	max-width: 100px;
-	max-height: 100px;
-	width: auto;
-	height: auto;
-}
-
 .bar a {
 	/* float: left; */
 	color: white;
