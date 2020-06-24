@@ -58,8 +58,8 @@ nav {
 	flex-wrap: wrap;
 	grid-area: navi;
 	font-size: 1.3em;
-	background-color: #2a8da9;
-}
+	background-color: #2a8da9;}
+
 
 #logo {
 	max-width: 100px;
@@ -191,6 +191,9 @@ img {
 .references {
 	font-size: 0.5em;
 }
+
+
+
 
 /* index page styling */
 /**********************/
