@@ -8,7 +8,6 @@
     <meta name="author" content="#web-development-2-rsd">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Jalaya ThemePark">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -26,7 +25,7 @@
             </div>
             <input type="text" placeHolder="Search" id="searchBox" />
             <div class="lang-dropdown">
-                <a class="button button-sm" href="futurePage.html"><img class="flag" src="img/united-kingdom.png"
+                <a class="button button-sm" href="index.html"><img class="flag" src="img/united-kingdom.png"
                         alt="Set language to English"></a>
 
                 <div class="lang-dropdown-content" id="language">
@@ -59,28 +58,16 @@
             </p>
         </div>
 
+        <!-- https://www.w3schools.com/w3css/w3css_slideshow.asp -->
         <div id="imageCarousel">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div>
-                            <img src="img/carousel1.jpg" alt="Slide 1">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div>
-                            <img src="img/carousel2.jpg" alt="Slide 2">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+            <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <img class="carouselPic" src="img/carousel1.jpg" alt="Slide 1">
+            <img class="carouselPic" src="img/carousel2.jpg" alt="Slide 2">
+            <img class="carouselPic" src="img/carousel3.jpg" alt="Slide 2">
+            <img class="carouselPic" src="img/carousel4.jpg" alt="Slide 2">
+            <img class="carouselPic" src="img/carousel5.jpg" alt="Slide 2">
+            <img class="carouselPic" src="img/carousel6.jpg" alt="Slide 2">
+            <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
         </div>
 
         <div id="specialEvents">
@@ -140,7 +127,6 @@
         </footer>
     </div>
 </body>
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/carousel.js"></script>
 
 </html>
