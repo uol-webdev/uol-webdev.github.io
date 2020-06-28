@@ -60,9 +60,36 @@
 
 
         <div class="bookingHeader">
-            <div>
+            <div class="header">
                 <h1>Booking</h1>
-                <a><img class="hotelPic" src="../img/hotel.png"></a>
+                <img class="hotelPic" src="img/hotel.png" alt="Icon">
+            </div>
+            <div class="filters">
+                <form action="bookAccommodation.html" method="post">
+                    <div class="filter">
+                        <div class="filter-header">Guests</div>
+                        <div class="filter-label">
+                            <label for="guests-adults">Adults:</label>
+                            <label for="guests-children">Children:</label>
+                        </div>
+                        <div class="filter-input">
+                            <input id="guests-adults" name="guests-adults" type="number" min="1" max="4" value="1">
+                            <input id="guests-children" name="guests-children" type="number" min="0" max="4" value="0">
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="filter-header">Date Period</div>
+                        <div class="filter-label">
+                            <label for="date-period-from">From:</label>
+                            <label for="date-period-to">To:</label>
+                        </div>
+                        <div class="filter-input">
+                            <input id="date-period-from" name="date-period-from" type="date" value="">
+                            <input id="date-period-to" name="date-period-to" type="date">
+                        </div>
+                    </div>
+                    <button type="submit" class="button2">Book now</button>
+                </form>
             </div>
         </div>
 
@@ -72,7 +99,7 @@
             </div>
             <div class="accommodation">
                 <div class="accommodationPic">
-                    <a><img class="hotelPic" src="../img/hotel1.png"></a>
+                    <a><img class="hotelPic" src="img/hotel1.png" alt="Cousteau - 5 Stars"></a>
                 </div>
                 <div class="accommodationDesc">
                     <h2>Cousteau - 5 Stars</h2>
@@ -80,7 +107,7 @@
                 </div>
                 <div class="accommodationPrice">
                     <h2>From &euro;200/night per adult</h2>
-                    <div id="discoverMore">
+                    <div class="discoverMore">
                         <a class="button2" href="futurePage.html">Discover More</a>
                     </div>
                 </div>
@@ -88,7 +115,7 @@
 
             <div class="accommodation">
                 <div class="accommodationPic">
-                    <a><img class="hotelPic" src="../img/hotel2.jpg"></a>
+                    <a><img class="hotelPic" src="img/hotel2.jpg" alt="Little Blue Lagoon"></a>
                 </div>
                 <div class="accommodationDesc">
                     <h2>Little Blue Lagoon</h2>
@@ -96,7 +123,7 @@
                 </div>
                 <div class="accommodationPrice">
                     <h2>From &euro;100/night per adult</h2>
-                    <div id="discoverMore">
+                    <div class="discoverMore">
                         <a class="button2" href="futurePage.html">Discover More</a>
                     </div>
                 </div>
@@ -104,7 +131,7 @@
 
             <div class="accommodation">
                 <div class="accommodationPic">
-                    <a><img class="hotelPic" src="../img/hotel3.jpg"></a>
+                    <a><img class="hotelPic" src="img/hotel3.jpg" alt="Mariana - 4 Stars"></a>
                 </div>
                 <div class="accommodationDesc">
                     <h2>Mariana - 4 Stars</h2>
@@ -112,7 +139,7 @@
                 </div>
                 <div class="accommodationPrice">
                     <h2>From &euro;140/night per adult</h2>
-                    <div id="discoverMore">
+                    <div class="discoverMore">
                         <a class="button2" href="futurePage.html">Discover More</a>
                     </div>
                 </div>
@@ -175,4 +202,5 @@
         </footer>
     </div>
 </body>
+<script src="js/accomodation.js"></script>
 </html>

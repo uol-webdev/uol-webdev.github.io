@@ -345,6 +345,29 @@ img {
 	height: auto;
 }
 
+.bookingHeader .header,
+.bookingHeader .filters,
+.bookingHeader .filters .filter .filter-label,
+.bookingHeader .filters .filter .filter-input {
+	display: inline-block;
+	vertical-align: middle;
+}
+.bookingHeader .filters .filter {
+	display: inline-block;
+	margin-right: 2em;
+	padding: 0 2em;
+}
+.bookingHeader .filters .filter .filter-header {
+	padding: 1em;
+	border-bottom: 2px solid lightgray;
+}
+.bookingHeader .filters .filter .filter-label label,
+.bookingHeader .filters .filter .filter-input input {
+	display: block;
+	line-height: 3em;
+	padding: 0 1em;
+}
+
 /* grids */
 /*********/
 
