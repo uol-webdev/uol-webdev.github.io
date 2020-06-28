@@ -147,12 +147,20 @@ input:focus {
 	box-shadow: 0 0 8px 0 dodgerBlue;
 }
 
-.button:focus {
-	outline: 0;
+.button0 {
+	background-color: #2a8da9;
+	border-radius: 25px;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
 
-.button {
-	background-color: #2a8da9;
+.button1 {
+	background-color: #A23939;
 	border-radius: 25px;
 	border: none;
 	color: white;
@@ -305,7 +313,7 @@ img {
 	width: 23%;
 }
 
-/* attractions page styling */
+/* accommodation page styling */
 /****************************/
 
 .bookingHeader {
@@ -339,8 +347,8 @@ img {
 }
 
 .hotelPic {
-	max-width: 200px;
-	max-height: 200px;
+	max-width: 300px;
+	max-height: 300px;
 	width: auto;
 	height: auto;
 }
@@ -377,8 +385,8 @@ img {
 	grid-template-areas:
 		'navi navi navi'
 		'info info info'
-		'bttn .    .   '
 		'crsl crsl crsl'
+		'.... bttn ....'
 		'spcl pass pass'
 		'spcl smph smph'
 		'foot foot foot';
@@ -403,12 +411,12 @@ img {
 
 .grid-container-accommodation {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1fr 6fr 1fr;
 	grid-template-areas:
 		'navi navi navi'
 		'info info info'
 		'bhdr bhdr bhdr'
-		'accm accm accm'
+		'.... accm ....'
 		'foot foot foot';
 	grid-gap: 10px 10px;
 	padding: 10px;
