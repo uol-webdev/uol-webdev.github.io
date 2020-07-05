@@ -1,5 +1,6 @@
 /* common page styling */
 
+/* load font for the site */
 @font-face { font-family: Roboto; src: url('../font/Roboto-Regular.ttf'); } 
 
 * {
