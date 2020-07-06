@@ -1,6 +1,10 @@
 /* common page styling */
 
-@font-face { font-family: Roboto; src: url('../font/Roboto-Regular.ttf'); } 
+/* load font for the site */
+@font-face {
+	font-family: Roboto;
+	src: url('../font/Roboto-Regular.ttf');
+}
 
 * {
 	box-sizing: border-box;
@@ -22,7 +26,7 @@ h1 {
 	color: white;
 }
 h2 {
-	color: #0B74B5;
+	color: #0b74b5;
 }
 p {
 	color: white;
@@ -37,7 +41,7 @@ nav {
 	flex-wrap: no-wrap;
 	grid-area: navi;
 	font-size: 1.3em;
-	background-color: #0E94E8;
+	background-color: #0e94e8;
 }
 
 #logo {
@@ -54,7 +58,7 @@ nav {
 }
 
 .bar a:hover {
-	color: #55B2EC;
+	color: #55b2ec;
 	border-color: dodgerBlue;
 	box-shadow: 0 0 1em 0 dodgerBlue;
 	background-color: white;
@@ -113,13 +117,15 @@ input:focus {
 
 .bgPic {
 	width: 100%;
-	height: 100px;
+	height: 150px;
+}
+
+.miscInfoTitle {
+	margin: 0px;
 }
 
 #miscInfo {
-
 	z-index: +1;
-
 	background-color: hsl(191, 71%, 52%);
 	color: white;
 	font-size: 1.3em;
@@ -131,10 +137,6 @@ input:focus {
 	animation: pulse 3s infinite;
 }
 
-.miscInfoTitle{
-
-	margin: 0px;
-}
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 0 0px rgba(255, 0, 0, 0.6);
@@ -153,7 +155,7 @@ input:focus {
 }
 
 .button0 {
-	background-color: #0E94E8;
+	background-color: #0e94e8;
 	border-radius: 25px;
 	border: none;
 	color: white;
@@ -165,7 +167,7 @@ input:focus {
 }
 
 .button1 {
-	background-color: #A23939;
+	background-color: #a23939;
 	border-radius: 25px;
 	border: none;
 	color: white;
@@ -198,7 +200,7 @@ footer {
 	align-items: center;
 	grid-area: foot;
 	font-size: 1.3em;
-	background-color: #0E94E8;
+	background-color: #0e94e8;
 }
 
 footer div:last-child {
@@ -250,7 +252,7 @@ img {
 	align-items: right;
 	flex-wrap: no-wrap;
 
-	background-color: #55B2EC;
+	background-color: #55b2ec;
 	color: white;
 	grid-area: spct;
 	padding: 5px;
@@ -258,7 +260,7 @@ img {
 }
 
 #specialEvents {
-	background-color: #55B2EC;
+	background-color: #55b2ec;
 	color: white;
 	grid-area: spcl;
 	padding: 5px;
@@ -266,7 +268,6 @@ img {
 
 #specialEvents a {
 	color: white;
-	text-decoration: underline;
 }
 
 #buyTickets {
@@ -280,17 +281,21 @@ img {
 }
 
 #annualPass {
-
 	display: flex;
 	flex-direction: row;
 	align-items: right;
 	flex-wrap: no-wrap;
-
-	background-color: #55B2EC;
+	background-color: #55b2ec;
 	color: white;
 	grid-area: pass;
 	padding: 5px;
 	max-width: 100%;
+}
+
+#annualPass a:visited,
+#annualPass a {
+	text-decoration: none;
+	color: inherit;
 }
 
 #annualPass img {
@@ -298,7 +303,7 @@ img {
 }
 
 #socialMediaPhotos {
-	background-color: #55B2EC;
+	background-color: #55b2ec;
 	color: white;
 	grid-area: smph;
 	padding: 5px;
@@ -338,7 +343,7 @@ img {
 #attractionsFilter {
 	grid-area: atfl;
 	text-align: center;
-	background-color: #55B2EC;
+	background-color: #55b2ec;
 	color: #f2f2f2;
 	height: 3em;
 }
@@ -357,7 +362,7 @@ img {
 
 .bookingHeader {
 	grid-area: bhdr;
-	background-color: #55B2EC;
+	background-color: #55b2ec;
 	color: white;
 	padding: 5px;
 }
@@ -373,16 +378,10 @@ img {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	flex-wrap: wrap;
-	background-color: #55B2EC;
+	flex-wrap: no-wrap;
+	background-color: #55b2ec;
 	padding: 5px;
 	margin: 5px;
-}
-
-.accommodationPrice {
-	margin-left: auto;
-	padding: 5px;
-	text-align: center;
 }
 
 .hotelPic {
@@ -390,6 +389,18 @@ img {
 	max-height: 300px;
 	width: auto;
 	height: auto;
+}
+
+.accommodationFeatures {
+	margin-top: 60px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+.accommodationPrice {
+	margin-left: auto;
+	padding: 5px;
+	text-align: center;
 }
 
 .bookingHeader .header,
