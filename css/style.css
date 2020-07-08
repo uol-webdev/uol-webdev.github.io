@@ -38,17 +38,19 @@ nav {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 	grid-area: navi;
 	font-size: 1.3em;
 	background-color: #0e94e8;
 }
 
 #logo {
-	max-width: 100px;
-	max-height: 100px;
+	max-width: 120px;
+	max-height: 120px;
 	width: auto;
 	height: auto;
+	padding: 0;
+	margin-bottom: -5px;
 }
 
 .bar a {
@@ -232,7 +234,7 @@ img {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 }
 
 .carouselPic {
@@ -249,8 +251,7 @@ img {
 #specialEventsTitle {
 	display: flex;
 	flex-direction: row;
-	align-items: right;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 
 	background-color: #55b2ec;
 	color: white;
@@ -283,8 +284,7 @@ img {
 #annualPass {
 	display: flex;
 	flex-direction: row;
-	align-items: right;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 	background-color: #55b2ec;
 	color: white;
 	grid-area: pass;
@@ -311,13 +311,6 @@ img {
 
 .smPic {
 	max-height: 300px;
-	max-width: auto;
-}
-
-.icon {
-	fill: white;
-	max-height: 175px;
-	max-width: auto;
 }
 
 /* attractions page styling */
@@ -378,7 +371,7 @@ img {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 	background-color: #55b2ec;
 	padding: 5px;
 	margin: 5px;
