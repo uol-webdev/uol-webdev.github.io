@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <!-- This head section contains all information about the page not visible directly to user -->
+
 <head>
     <!-- This is a title visible at a browser tab -->
     <title>Jalaya</title>
@@ -17,25 +18,26 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <!-- This body section contains all visible content -->
+
 <body>
     <!-- Creating div class for grid-->
     <div class="grid-container-index">
         <!-- These is all content in a header-->
         <nav>
             <!-- This is a logo-->
-            <object id="logo" data="img/jalaya-logo.png" name="jalaya-logo">
-                Jalaya
-            </object>
+            <a href="index.html">
+                <img id="logo" src="img/jalaya-logo.png" alt="jalaya-logo">
+            </a>
             <!-- This is a navigation bar with links to relevant pages using anchors-->
             <div class="bar">
                 <a href="index.html">Home</a>
                 <a href="attractions.html" class="active">Attractions</a>
-                <a href="futurePage.html">Buy Tickets</a>
-                <a href="bookAccommodation.html">Accommodations</a>
+                <a href="futurePage.html">Tickets</a>
+                <a href="accommodations.html">Accommodations</a>
             </div>
             <!-- This is a search form-->
-            <input type="text" placeHolder="Search" id="searchBox" />
-             <!-- This is a language options dropdown with flags' pictures and alternate text.
+            <input type="search" placeHolder="Search" id="searchBox" />
+            <!-- This is a language options dropdown with flags' pictures and alternate text.
              For all chosen languages except English - user will be redirected to coming soon page.
              -->
             <div class="lang-dropdown">
@@ -56,7 +58,7 @@
                             alt="Set language to Mandarin"></a>
                     <a class="button button0 button-sm" href="futurePage.html"><img class="flag" src="img/japan.png"
                             alt="Set language to Japanese"></a>
-                    <a class="button button0 button-sm" href="futurePage.html"><img class="flag" src="img/korea republic.png"
+                    <a class="button button0 button-sm" href="futurePage.html"><img class="flag" src="img/korea republic.png" 
                             alt="Set language to Korean"></a>
                     <a class="button button0 button-sm" href="futurePage.html"><img class="flag" src="img/india.png"
                             alt="Set language to Hindi"></a>
@@ -105,11 +107,11 @@
         </div>
         <!-- Button for buying tickets linking to coming soon page -->
         <div id="buyTickets">
-            <a class="button button1" href="futurePage.html">Buy Tickets</a>
+            <a class="button button1" href="futurePage.html">Tickets</a>
         </div>
         <!-- Button for booking accomodation linking to accommodation page -->
         <div id="bookAccommodation">
-            <a class="button button1" href="bookAccommodation.html">Accommodations</a>
+            <a class="button button1" href="accommodations.html">Accommodations</a>
         </div>
         <!-- Annual pass info and icon linking to coming soon page -->
         <div id="annualPass">
@@ -122,10 +124,10 @@
         <!-- Section for photos from Social Media -->
         <div id="socialMediaPhotos">
             <h1>Photos from Social Media</h1>
-            <img class="smPic" src="img/smphoto1.jpg" alt="Social Media Girl with Candy Apple"></a>
-            <img class="smPic" src="img/smphoto2.jpg" alt="Social Media Ice Cream Cone"></a>
-            <img class="smPic" src="img/smphoto3.jpg" alt="Social Media Game Arcade"></a>
-            <img class="smPic" src="img/smphoto4.jpg" alt="Social Media Girls in Pool"></a>
+            <img class="smPic" src="img/smphoto1.jpg" alt="Social Media Girl with Candy Apple">
+            <img class="smPic" src="img/smphoto2.jpg" alt="Social Media Ice Cream Cone">
+            <img class="smPic" src="img/smphoto3.jpg" alt="Social Media Game Arcade">
+            <img class="smPic" src="img/smphoto4.jpg" alt="Social Media Girls in Pool">
         </div>
         <!-- Footer section with navigation menu linking to coming soon page -->
         <footer>
