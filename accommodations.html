@@ -61,21 +61,24 @@
                 recommendations.
             </p>
         </div>
-
+        <!-- Booking header section  -->
         <div class="bookingHeader">
             <div class="header">
                 <h1>Booking</h1>
                 <img class="hotelPic" src="img/hotel.png" alt="Icon">
             </div>
             <div class="filters">
+              <!-- Booking form -->  
                 <form action="accommodations.html" method="post">
                     <div class="filter">
                         <div class="filter-header">Guests</div>
                         <div class="filter-label">
+                            <!-- Input forms for quantity of adults and children--> 
                             <label for="guests-adults">Adults:</label>
                             <label for="guests-children">Children:</label>
                         </div>
                         <div class="filter-input">
+                            <!-- Settings of possible inputs: only numbers in the range starting from min and ending with max, also default value--> 
                             <input id="guests-adults" name="guests-adults" type="number" min="1" max="4" value="1">
                             <input id="guests-children" name="guests-children" type="number" min="0" max="4" value="0">
                         </div>
@@ -83,19 +86,22 @@
                     <div class="filter">
                         <div class="filter-header">Date Period</div>
                         <div class="filter-label">
+                            <!-- Input forms for arrival and departure dates--> 
                             <label for="date-period-from">From:</label>
                             <label for="date-period-to">To:</label>
                         </div>
                         <div class="filter-input">
+                            <!-- Settings of possible inputs: only dates-->
                             <input id="date-period-from" name="date-period-from" type="date" value="">
                             <input id="date-period-to" name="date-period-to" type="date">
                         </div>
                     </div>
+                    <!-- Button - Book now-->
                     <button type="submit" class="button button1">Book now</button>
                 </form>
             </div>
         </div>
-
+        <!-- Section for accommodations options-->
         <div class="accommodationListings">
             <div class="accommodation">
                 <h1>Accommodations</h1>
@@ -118,7 +124,9 @@
                     </ul>
                 </div> -->
                 <div class="accommodationPrice">
+                     <!-- UTF-8 currency symbol for euro-->
                     <h2>From &euro;100/night per adult</h2>
+                    <!-- Button - Dicover now-->
                     <div class="discoverMore">
                         <a class="button button2" href="futurePage.html">Discover More</a>
                     </div>
