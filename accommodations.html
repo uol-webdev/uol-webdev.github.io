@@ -17,11 +17,11 @@
             <a href="index.html">
                 <img id="logo" src="img/jalaya-logo.png" alt="jalaya-logo">
             </a>
-            <div class="bar">
+            <div class="navigation-links">
                 <a href="index.html">Home</a>
                 <a href="attractions.html" class="active">Attractions</a>
                 <a href="futurePage.html">Tickets</a>
-                <a href="accommodations.html">Accommodations</a>
+                <a href="accommodations.html" class="active">Accommodations</a>
             </div>
             <input type="search" placeHolder="Search" id="searchBox" />
             <div class="lang-dropdown">
@@ -66,17 +66,17 @@
                 <img class="hotelPic" src="img/hotel.png" alt="Icon">
             </div>
             <div class="filters">
-              <!-- Booking form -->  
+              <!-- Booking form -->
                 <form action="accommodations.html" method="post">
                     <div class="filter">
                         <div class="filter-header">Guests</div>
                         <div class="filter-label">
-                            <!-- Input forms for quantity of adults and children--> 
-                            <label for="guests-adults">Adults:</label>
-                            <label for="guests-children">Children:</label>
+                            <!-- Input forms for quantity of adults and children-->
+                            <label for="guests-adults" class="filter-adults">Adults:</label>
+                            <label for="guests-children" class="filter-children">Children:</label>
                         </div>
                         <div class="filter-input">
-                            <!-- Settings of possible inputs: only numbers in the range starting from min and ending with max, also default value--> 
+                            <!-- Settings of possible inputs: only numbers in the range starting from min and ending with max, also default value-->
                             <input id="guests-adults" name="guests-adults" type="number" min="1" max="4" value="1">
                             <input id="guests-children" name="guests-children" type="number" min="0" max="4" value="0">
                         </div>
@@ -84,7 +84,7 @@
                     <div class="filter">
                         <div class="filter-header">Date Period</div>
                         <div class="filter-label">
-                            <!-- Input forms for arrival and departure dates--> 
+                            <!-- Input forms for arrival and departure dates-->
                             <label for="date-period-from">From:</label>
                             <label for="date-period-to">To:</label>
                         </div>
@@ -156,39 +156,8 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <footer>
-            <div class="bar">
+            <div class="navigation-links">
                 <a href="futurePage.html">Contact and Help</a>
                 <a href="futurePage.html">About Our Park</a>
                 <a href="futurePage.html">Legal Info</a>
@@ -204,7 +173,7 @@
                 <a class="button button0 button-sm" href="https://www.twitter.com" target="_blank">
                     <img class="smLogo" src="img/Twitter.png" alt="Twitter"></a>
             </div>
-            <div class="bar">
+            <div class="navigation-links">
                 <a class="references" href="https://www.vecteezy.com" target="_blank">Social Media Icon Vectors by
                     Vecteezy</a>
                 <a class="references" href="https://unsplash.com" target="_blank">Photos from Unsplash</a>

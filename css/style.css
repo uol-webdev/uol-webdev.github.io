@@ -24,13 +24,14 @@ body {
 
 h1 {
 	color: white;
+	padding-left: 0.5em;
 }
 h2 {
 	color: #0b74b5;
 }
 p {
 	color: white;
-	margin: 0px;
+	margin: 0;
 }
 
 nav {
@@ -53,13 +54,14 @@ nav {
 	margin-bottom: -5px;
 }
 
-.bar a {
+.navigation-links a {
 	color: white;
 	padding: 1em 1em;
 	text-decoration: none;
 }
 
-.bar a:hover {
+.navigation-links a.active,
+.navigation-links a:hover {
 	color: #55b2ec;
 	border-color: dodgerBlue;
 	box-shadow: 0 0 1em 0 dodgerBlue;
@@ -118,6 +120,8 @@ input:focus {
 	background-position: 0 0;
 	grid-area: info;
 	z-index: 0;
+	margin-top: -10px;
+	margin-bottom: -10px;
 }
 
 .bgPic {
@@ -126,7 +130,7 @@ input:focus {
 }
 
 .miscInfoTitle {
-	margin: 0px;
+	margin: 0;
 }
 
 #miscInfo {
@@ -144,7 +148,7 @@ input:focus {
 
 @keyframes pulse {
 	0% {
-		box-shadow: 0 0 0 0px rgba(255, 0, 0, 0.6);
+		box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6);
 	}
 	50% {
 		box-shadow: 0 0 0 10px rgba(255, 0, 0, 0.1);
@@ -195,6 +199,13 @@ input:focus {
 	font-size: 16px;
 }
 
+.button:hover,
+.button0:hover,
+.button1:hover,
+.button2:hover {
+	cursor: pointer;
+}
+
 .button-sm {
 	padding: 5px 5px;
 }
@@ -241,8 +252,9 @@ img {
 }
 
 .carouselPic {
-	max-width: 85%;
+	max-width: 100%;
 	height: 500px;
+	margin: 0 auto;
 }
 .display-right {
 	margin-left: auto;
@@ -451,20 +463,42 @@ img {
 	display: inline-block;
 	vertical-align: middle;
 }
+.bookingHeader .filters .filter .filter-label {
+	padding-top: 1em;
+}
 .bookingHeader .filters .filter {
 	display: inline-block;
 	margin-right: 2em;
 	padding: 0 2em;
 }
 .bookingHeader .filters .filter .filter-header {
-	padding: 1em;
-	border-bottom: 2px solid lightgray;
+	padding: 1em 0.9em;
+	border-bottom: 1px solid lightgray;
+	font-size: 1.2em;
 }
 .bookingHeader .filters .filter .filter-label label,
 .bookingHeader .filters .filter .filter-input input {
 	display: block;
 	line-height: 3em;
 	padding: 0 1em;
+}
+.bookingHeader .filters .filter .filter-label label {
+	background-repeat: no-repeat;
+	background-position-y: center;
+}
+.bookingHeader .filters .filter .filter-label label.filter-adults {
+	background-image: url("../img/accommodation_filter_adults.svg");
+	padding-left: 40px;
+	background-position-x: 12px;
+}
+.bookingHeader .filters .filter .filter-label label.filter-children {
+	background-image: url("../img/accommodation_filter_children.svg");
+	padding-left: 40px;
+	background-position-x: 0;
+}
+.bookingHeader .filters button {
+	margin: 4em 0 0 0;
+	vertical-align: top;
 }
 
 /* grids */
