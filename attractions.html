@@ -50,9 +50,7 @@
             </div>
         </nav>
 
-        <div id="bkgrnd">
-            <img class="bgPic" src="img/HeaderBubbles.jpg" alt="Water Bubbles">
-        </div>
+        <div id="background"></div>
 
         <div id="miscInfo">
             <h2 class="miscInfoTitle">COVID-19 and reopening info</h2>
@@ -62,110 +60,66 @@
             </p>
         </div>
 
-        <div id="attractionsFilter">
-            <div class="filter">
-                <label for="attraction-type">Type:</label>
-                <select id="attraction-type">
-                    <option value="">All</option>
-                    <option value="roller-coaster">Roller coaster</option>
-                    <option value="splash-slide">Splash slide</option>
-                </select>
+        <div id="attractionsFilterContainer">
+            <div id="attractionsFilter">
+                <div class="filter">
+                    <label for="attraction-type">Type:</label>
+                    <select id="attraction-type">
+                        <option value="">All</option>
+                        <option value="roller-coaster">Roller coaster</option>
+                        <option value="splash-slide">Splash slide</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="attraction-age">Age:</label>
+                    <select id="attraction-age">
+                        <option value="">All</option>
+                        <option value="family">Family</option>
+                        <option value="kids">Kids</option>
+                        <option value="adults">Adults only</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="attraction-intensity">Intensity:</label>
+                    <select id="attraction-intensity">
+                        <option value="">All</option>
+                        <option value="slow">Slow</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="for-the-bravest">For the bravest</option>
+                    </select>
+                </div>
             </div>
-            <div class="filter">
-                <label for="attraction-age">Age:</label>
-                <select id="attraction-age">
-                    <option value="">All</option>
-                    <option value="family">Family</option>
-                    <option value="kids">Kids</option>
-                    <option value="adults">Adults only</option>
-                </select>
-            </div>
-            <div class="filter">
-                <label for="attraction-intensity">Intensity:</label>
-                <select id="attraction-intensity">
-                    <option value="">All</option>
-                    <option value="slow">Slow</option>
-                    <option value="moderate">Moderate</option>
-                    <option value="for-the-bravest">For the bravest</option>
-                </select>
-            </div>
-        </div>
 
-        <div id="buyTickets">
-            <a class="button button1" href="futurePage.html">Tickets</a>
+            <div id="buyTickets">
+                <a class="button button1" href="futurePage.html">Tickets</a>
+            </div>
         </div>
 
         <div id="attractions">
             <div class="attraction" data-type="roller-coaster" data-age="adults" data-intensity="moderate"
                 style="background-image: url(img/carousel1_small.jpg)">
-                <h2>Carousel</h2>
+                <h2>Sea Creatures Carousel</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="attraction" data-type="splash-slide" data-age="adults" data-intensity="moderate">
-                Attraction 2:<br>
-                Splash Slide<br>
-                Adults<br>
-                Moderate
+            <div class="attraction" data-type="splash-slide" data-age="adults" data-intensity="moderate"
+                 style="background-image: url(img/carousel2_small.jpg)">
+                <h2>Wave Pool</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="attraction" data-type="roller-coaster" data-age="family" data-intensity="slow">
-                Attraction 3:<br>
-                Roller Coaster<br>
-                Family<br>
-                Slow
+            <div class="attraction" data-type="roller-coaster" data-age="family" data-intensity="slow"
+                 style="background-image: url(img/carousel3_small.jpg)">
+                <h2>Splash Mountain</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="attraction" data-type="splash-slide" data-age="adults" data-intensity="slow">
-                Attraction 4:<br>
-                Splash Slide<br>
-                Adults<br>
-                Slow
+            <div class="attraction" data-type="splash-slide" data-age="adults" data-intensity="slow"
+                 style="background-image: url(img/carousel4_small.jpg)">
+                <h2>Surf Ridge</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="attraction" data-type="roller-coaster" data-age="adults" data-intensity="for-the-bravest">
-                Attraction 5:<br>
-                Roller Coaster<br>
-                Adults<br>
-                For the bravest
-            </div>
-            <div class="attraction" data-type="roller-coaster" data-age="kids" data-intensity="slow">
-                Attraction 6:<br>
-                Roller Coaster<br>
-                Kids<br>
-                Slow
-            </div>
-            <div class="attraction" data-type="splash-slide" data-age="family" data-intensity="moderate">
-                Attraction 7:<br>
-                Splash Slide<br>
-                Family<br>
-                Moderate
-            </div>
-            <div class="attraction" data-type="splash-slide" data-age="kids" data-intensity="moderate">
-                Attraction 8:<br>
-                Splash Slide<br>
-                Kids<br>
-                Moderate
-            </div>
-            <div class="attraction" data-type="roller-coaster" data-age="adults" data-intensity="moderate">
-                Attraction 9:<br>
-                Roller Coaster<br>
-                Adults<br>
-                Moderate
-            </div>
-            <div class="attraction" data-type="splash-slide" data-age="family" data-intensity="moderate">
-                Attraction 10:<br>
-                Splash Slide<br>
-                Family<br>
-                Moderate
-            </div>
-            <div class="attraction" data-type="splash-slide" data-age="adults" data-intensity="for-the-bravest">
-                Attraction 11:<br>
-                Splash Slide<br>
-                Adults<br>
-                For the bravest
-            </div>
-            <div class="attraction" data-type="roller-coaster" data-age="kids" data-intensity="slow">
-                Attraction 12:<br>
-                Roller Coaster<br>
-                Kids<br>
-                Slow
+            <div class="attraction" data-type="roller-coaster" data-age="adults" data-intensity="for-the-bravest"
+                 style="background-image: url(img/carousel5_small.jpg)">
+                <h2>Snake Tunnels</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </div>
 
