@@ -316,23 +316,6 @@ img {
 /* attractions page styling */
 /****************************/
 
-#attractions {
-	grid-area: atrs;
-	text-align: center;
-}
-.attraction {
-	background-color: lavender;
-	text-align: left;
-	grid-area: attr;
-	margin: 1em 0.5em;
-	font-size: 18px;
-	display: inline-block;
-	height: 10em;
-	float: left;
-	padding: 1em;
-	line-height: 1.5em;
-}
-
 #attractionsFilter {
 	grid-area: atfl;
 	text-align: center;
@@ -345,9 +328,35 @@ img {
 	display: inline-block;
 	line-height: 3em;
 }
-
+#attractions {
+	grid-area: atrs;
+	text-align: center;
+}
 .attraction {
+	background-color: lavender;
+	text-align: left;
+	grid-area: attr;
+	margin: 1em 0.5em;
+	font-size: 18px;
+	display: inline-block;
+	height: 15em;
+	float: left;
+	line-height: 1.5em;
 	width: 23%;
+	overflow: hidden;
+}
+.attraction h2 {
+	margin: 0.5em;
+	color: white;
+}
+.attraction p {
+	padding: 0.5em;
+	margin-top: 1000px;
+	height: 100%;
+}
+.attraction:hover p {
+	margin-top: 0;
+	background: rgba(0, 0, 0, 0.3);
 }
 
 /* accommodation page styling */
