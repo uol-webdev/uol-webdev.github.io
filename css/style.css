@@ -112,7 +112,10 @@ input:focus {
 	height: auto;
 }
 
-#bkgrnd {
+#background {
+	background-image: url("../img/HeaderBubbles.jpg");
+	background-size: cover;
+	background-position: 0 0;
 	grid-area: info;
 	z-index: 0;
 }
@@ -275,6 +278,13 @@ img {
 	justify-self: left;
 	grid-area: bttn;
 }
+#buyTickets a {
+	padding-left: 58px;
+	background-image: url("../img/ticket.svg");
+	background-position: 13px 5px;
+	background-repeat: no-repeat;
+	padding-right: 17px;
+}
 
 #bookAccommodation {
 	justify-self: right;
@@ -316,38 +326,76 @@ img {
 /* attractions page styling */
 /****************************/
 
+#attractionsFilterContainer {
+	background-color: #55b2ec;
+	grid-area: atfc;
+}
+#attractionsFilterContainer #buyTickets {
+	display: inline-block;
+	float: right;
+	grid-area: unset;
+	margin: 3em 5em 0 0;
+}
+#attractionsFilter {
+	width: 75%;
+	text-align: center;
+	display: inline-block;
+	color: #f2f2f2;
+	padding-bottom: 1em;
+}
+#attractionsFilter .filter {
+	width: 30%;
+	display: inline-block;
+	line-height: 1.5em;
+	background-position: center 0;
+	background-size: 98px;
+	background-repeat: no-repeat;
+	padding-top: 5.5em;
+}
+#attractionsFilter .filter-type {
+	background-image: url("../img/filter_type.svg");
+}
+#attractionsFilter .filter-age {
+	background-image: url("../img/filter_age.svg");
+}
+#attractionsFilter .filter-intensity {
+	background-image: url("../img/filter_intensity.svg");
+}
+#attractionsFilter .filter label {
+	display:block;
+}
 #attractions {
 	grid-area: atrs;
 	text-align: center;
 }
 .attraction {
-	background-color: lavender;
+	background-size: cover;
+	background-position: 0 0;
 	text-align: left;
-	grid-area: attr;
-	margin: 1em 0.5em;
+	margin: 0 0.5em 1em 0;
 	font-size: 18px;
 	display: inline-block;
-	height: 10em;
+	height: 15em;
 	float: left;
-	padding: 1em;
 	line-height: 1.5em;
+	width: 24%;
+	overflow: hidden;
 }
-
-#attractionsFilter {
-	grid-area: atfl;
-	text-align: center;
-	background-color: #55b2ec;
-	color: #f2f2f2;
-	height: 3em;
+.attraction h2 {
+	margin: 0;
+	padding: 0.5em;
+	color: white;
+	background: rgba(0, 0, 0, 0.3);
 }
-#attractionsFilter .filter {
-	width: 30%;
-	display: inline-block;
-	line-height: 3em;
+.attraction p {
+	padding: 0.5em;
+	height: 100%;
+	visibility: hidden;
 }
-
-.attraction {
-	width: 23%;
+.attraction:hover p {
+	margin-top: 0;
+	background: rgba(0, 0, 0, 0.3);
+	visibility: visible;
 }
 
 /* accommodation page styling */
@@ -443,7 +491,7 @@ img {
 	grid-template-areas:
 		'navi navi navi'
 		'info info info'
-		'atfl atfl bttn'
+		'atfc atfc atfc'
 		'atrs atrs atrs'
 		'foot foot foot';
 	grid-gap: 10px 10px;
