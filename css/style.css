@@ -278,6 +278,13 @@ img {
 	justify-self: left;
 	grid-area: bttn;
 }
+#buyTickets a {
+	padding-left: 58px;
+	background-image: url("../img/ticket.svg");
+	background-position: 13px 5px;
+	background-repeat: no-repeat;
+	padding-right: 17px;
+}
 
 #bookAccommodation {
 	justify-self: right;
@@ -327,19 +334,35 @@ img {
 	display: inline-block;
 	float: right;
 	grid-area: unset;
-	margin: 1em 2em 1em 0;
+	margin: 3em 5em 0 0;
 }
 #attractionsFilter {
 	width: 75%;
 	text-align: center;
 	display: inline-block;
 	color: #f2f2f2;
-	height: 3em;
+	padding-bottom: 1em;
 }
 #attractionsFilter .filter {
 	width: 30%;
 	display: inline-block;
-	line-height: 3em;
+	line-height: 1.5em;
+	background-position: center 0;
+	background-size: 98px;
+	background-repeat: no-repeat;
+	padding-top: 5.5em;
+}
+#attractionsFilter .filter-type {
+	background-image: url("../img/filter_type.svg");
+}
+#attractionsFilter .filter-age {
+	background-image: url("../img/filter_age.svg");
+}
+#attractionsFilter .filter-intensity {
+	background-image: url("../img/filter_intensity.svg");
+}
+#attractionsFilter .filter label {
+	display:block;
 }
 #attractions {
 	grid-area: atrs;
