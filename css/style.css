@@ -24,16 +24,21 @@ body {
 /* Set colour for main h1 headings to white, with padding on left */
 h1 {
 	color: white;
-	padding-left: 0.5em;
+	padding-left: .5em;
 }
 /* Set colour for secondary h2 headings */
 h2 {
 	color: #0b74b5;
 }
+h1,
+h2 {
+	padding-left: 0.5em;
+}
 /* set colour and margin for paragraphs */
 p {
 	color: white;
 	margin: 0;
+	padding: 0 .5em;
 }
 
 /* set size and position of logo */
