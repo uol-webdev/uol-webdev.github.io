@@ -60,7 +60,7 @@ nav {
 	text-decoration: none;
 }
 
-.navigation-links a.active,
+.navigation-links a:active,
 .navigation-links a:hover {
 	color: #55b2ec;
 	border-color: dodgerBlue;
