@@ -1,39 +1,52 @@
-/* common page styling */
-
 /* load font for the site */
 @font-face {
 	font-family: Roboto;
 	src: url('../font/Roboto-Regular.ttf');
 }
 
+/* common page styling */
 * {
 	box-sizing: border-box;
-
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
 }
 
+/* set default style for the body of each page */
 body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+/* Set colour for main h1 headings to white, with padding on left */
 h1 {
 	color: white;
 	padding-left: 0.5em;
 }
+/* Set colour for secondary h2 headings */
 h2 {
 	color: #0b74b5;
 }
+/* set colour and margin for paragraphs */
 p {
 	color: white;
 	margin: 0;
 }
 
+/* set size and position of logo */
+#logo {
+	max-width: 120px;
+	max-height: 120px;
+	width: auto;
+	height: auto;
+	padding: 0;
+	margin-bottom: -5px;
+}
+
+/* setup the nav bar as a flex item, within the grid area */
 nav {
 	display: flex;
 	flex-direction: row;
@@ -45,29 +58,23 @@ nav {
 	background-color: #0e94e8;
 }
 
-#logo {
-	max-width: 120px;
-	max-height: 120px;
-	width: auto;
-	height: auto;
-	padding: 0;
-	margin-bottom: -5px;
-}
-
+/* set colour of nav bar links */
 .navigation-links a {
 	color: white;
 	padding: 1em 1em;
 	text-decoration: none;
 }
 
+/* set colour and style of nav bar links when user interacts with them */
 .navigation-links a:active,
 .navigation-links a:hover {
 	color: #55b2ec;
-	border-color: dodgerBlue;
-	box-shadow: 0 0 1em 0 dodgerBlue;
+	border-color: hsla(246, 85%, 43%, 0.3);  /* dodgerBlue; */
+	box-shadow: 0 0 8px 0 hsla(246, 85%, 43%, 0.3);  /* dodgerBlue; */
 	background-color: white;
 }
 
+/* set format of the search bar */
 input {
 	width: 200px;
 	height: 40px;
@@ -81,32 +88,38 @@ input {
 	max-width: 100%;
 }
 
+/* animate border around search bar */
 input:focus {
-	border-color: dodgerBlue;
-	box-shadow: 0 0 8px 0 dodgerBlue;
+	border-color: hsla(246, 85%, 43%, 0.3);  /* dodgerBlue; */
+	box-shadow: 0 0 8px 0 hsla(246, 85%, 43%, 0.3);  /* dodgerBlue; */
 }
 
+/* place search image icon inside search input box */
 #searchBox {
 	grid-area: srch;
 	background: white url(../img/search-sm.png) left no-repeat;
 	padding-left: 40px;
 }
 
+/* format buttons for language selection */
 .lang-dropdown {
 	display: inline-block;
 	position: relative;
 }
 
+/* ensure language buttons z-index is set so they are on top of other items */
 .lang-dropdown-content {
 	display: none;
 	position: absolute;
 	z-index: 1;
 }
 
+/* only show language buttons when selected by user */
 .lang-dropdown:hover .lang-dropdown-content {
 	display: block;
 }
 
+/* set the size of the language button flags */
 .flag {
 	max-width: 30px;
 	max-height: 30px;
@@ -114,8 +127,9 @@ input:focus {
 	height: auto;
 }
 
+/* set the top of the page background image, ensure its z-index keeps it behind other items */
 #background {
-	background-image: url("../img/HeaderBubbles.jpg");
+	background-image: url('../img/HeaderBubbles.jpg');
 	background-size: cover;
 	background-position: 0 0;
 	grid-area: info;
@@ -124,15 +138,18 @@ input:focus {
 	margin-bottom: -10px;
 }
 
+/* set the size of the background pic */
 .bgPic {
 	width: 100%;
 	height: 150px;
 }
 
+/* set no margin around the info/COVID message */
 .miscInfoTitle {
 	margin: 0;
 }
 
+/* set style of info/COVID message, ensure its z-index keeps it above background image */
 #miscInfo {
 	z-index: +1;
 	background-color: hsl(191, 71%, 52%);
@@ -146,6 +163,7 @@ input:focus {
 	animation: pulse 3s infinite;
 }
 
+/* setup animation around info/COVID box */
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6);
@@ -158,58 +176,41 @@ input:focus {
 	}
 }
 
+/* set animation around all buttons */
 .button:hover {
-	border-color: dodgerBlue;
-	box-shadow: 0 0 8px 0 dodgerBlue;
-}
-
-.button0 {
-	background-color: #0e94e8;
-	border-radius: 25px;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-}
-
-.button1 {
-	background-color: #a23939;
-	border-radius: 25px;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-}
-
-.button2 {
-	background-color: #0d2d36;
-	border-radius: 25px;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-}
-
-.button:hover,
-.button0:hover,
-.button1:hover,
-.button2:hover {
+	border-color: hsla(246, 85%, 43%, 0.3);  /* dodgerBlue; */
+	box-shadow: 0 0 8px 0 hsla(246, 85%, 43%, 0.3);  /* dodgerBlue; */
 	cursor: pointer;
 }
 
-.button-sm {
-	padding: 5px 5px;
+/* set common style of all buttons */
+.button {
+	border-radius: 25px;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
 
+/* set styles of different types of buttons */
+.button-sm {
+	background-color: #0e94e8;
+	padding: 5px 5px;
+}
+.button0 {
+	background-color: #0e94e8;
+}
+.button1 {
+	background-color: #a23939;
+}
+.button2 {
+	background-color: #0d2d36;
+}
+
+/* setup the footer as a flex item, within the grid area */
 footer {
 	display: flex;
 	flex-direction: row;
@@ -219,15 +220,18 @@ footer {
 	background-color: #0e94e8;
 }
 
+/* ensure the languge icon keeps to the left of the page */
 footer div:last-child {
 	margin-left: auto;
 }
 
+/* set defaul styling for all img elements */
 img {
 	padding: 5px 5px;
 	max-width: 100%;
 }
 
+/* set styling for social media logos in footer */
 .smLogo {
 	display: block;
 	max-width: 50px;
@@ -236,6 +240,7 @@ img {
 	height: auto;
 }
 
+/* set small font for reference info in footer */
 .references {
 	font-size: 0.5em;
 }
@@ -243,6 +248,7 @@ img {
 /* index page styling */
 /**********************/
 
+/* setup the image carousel as a flex item, within the grid area */
 #imageCarousel {
 	grid-area: crsl;
 	display: flex;
@@ -251,11 +257,14 @@ img {
 	flex-wrap: nowrap;
 }
 
+/* set styling for the carousel images */
 .carouselPic {
 	max-width: 100%;
 	height: 500px;
 	margin: 0 auto;
 }
+
+/* display next/prev carousel buttons on right/left of carousel images */
 .display-right {
 	margin-left: auto;
 }
@@ -263,11 +272,11 @@ img {
 	margin-right: auto;
 }
 
+/* set style for special events elements */
 #specialEventsTitle {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-
 	background-color: #55b2ec;
 	color: white;
 	grid-area: spct;
@@ -286,13 +295,14 @@ img {
 	color: white;
 }
 
+/* set style for tickets and accommodation buttons and locate them in the grid */
 #buyTickets {
 	justify-self: left;
 	grid-area: bttn;
 }
 #buyTickets a {
 	padding-left: 58px;
-	background-image: url("../img/ticket.svg");
+	background-image: url('../img/ticket.svg');
 	background-position: 13px 5px;
 	background-repeat: no-repeat;
 	padding-right: 17px;
@@ -303,6 +313,7 @@ img {
 	grid-area: bttn;
 }
 
+/* set style for annual pass information */
 #annualPass {
 	display: flex;
 	flex-direction: row;
@@ -313,24 +324,22 @@ img {
 	padding: 5px;
 	max-width: 100%;
 }
-
 #annualPass a:visited,
 #annualPass a {
 	text-decoration: none;
 	color: inherit;
 }
-
 #annualPass img {
 	margin-left: 200px;
 }
 
+/* set style for social media pictures */
 #socialMediaPhotos {
 	background-color: #55b2ec;
 	color: white;
 	grid-area: smph;
 	padding: 5px;
 }
-
 .smPic {
 	max-height: 300px;
 }
@@ -365,16 +374,16 @@ img {
 	padding-top: 5.5em;
 }
 #attractionsFilter .filter-type {
-	background-image: url("../img/filter_type.svg");
+	background-image: url('../img/filter_type.svg');
 }
 #attractionsFilter .filter-age {
-	background-image: url("../img/filter_age.svg");
+	background-image: url('../img/filter_age.svg');
 }
 #attractionsFilter .filter-intensity {
-	background-image: url("../img/filter_intensity.svg");
+	background-image: url('../img/filter_intensity.svg');
 }
 #attractionsFilter .filter label {
-	display:block;
+	display: block;
 }
 #attractions {
 	grid-area: atrs;
@@ -487,12 +496,12 @@ img {
 	background-position-y: center;
 }
 .bookingHeader .filters .filter .filter-label label.filter-adults {
-	background-image: url("../img/accommodation_filter_adults.svg");
+	background-image: url('../img/accommodation_filter_adults.svg');
 	padding-left: 40px;
 	background-position-x: 12px;
 }
 .bookingHeader .filters .filter .filter-label label.filter-children {
-	background-image: url("../img/accommodation_filter_children.svg");
+	background-image: url('../img/accommodation_filter_children.svg');
 	padding-left: 40px;
 	background-position-x: 0;
 }
