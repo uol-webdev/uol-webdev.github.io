@@ -260,6 +260,7 @@ img {
 	align-items: center;
 	flex-wrap: nowrap;
 }
+
 /* display next/prev carousel buttons on the right/left sides of the carousel images, over them */
 #carousel button {
 	position: absolute;
