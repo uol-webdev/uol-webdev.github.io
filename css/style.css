@@ -220,19 +220,19 @@ footer {
 	background-color: #0e94e8;
 }
 
-/* ensure the languge icon keeps to the left of the page */
+/* ensure the language icon keeps to the left of the page */
 footer div:last-child {
 	margin-left: auto;
 }
 
-/* set defaul styling for all img elements */
+/* set default styling for all img elements */
 img {
 	padding: 5px 5px;
 	max-width: 100%;
 }
 
 /* set styling for social media logos in footer */
-.smLogo {
+.social-media-logo {
 	display: block;
 	max-width: 50px;
 	max-height: 50px;
@@ -249,27 +249,30 @@ img {
 /**********************/
 
 /* setup the image carousel as a flex item, within the grid area */
-#imageCarousel {
+#carousel {
 	grid-area: crsl;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	flex-wrap: nowrap;
 }
-
+/* display next/prev carousel buttons on the right/left sides of the carousel images, over them */
+#carousel button {
+	position: absolute;
+	z-index: 1;
+}
+#carousel button:first-child {
+	left: 30px;
+}
+#carousel button:last-child {
+	right: 30px;
+}
 /* set styling for the carousel images */
-.carouselPic {
+#carousel img {
 	max-width: 100%;
 	height: 500px;
 	margin: 0 auto;
-}
-
-/* display next/prev carousel buttons on right/left of carousel images */
-.display-right {
-	margin-left: auto;
-}
-.display-left {
-	margin-right: auto;
+	padding: 0;
 }
 
 /* set style for special events elements */
@@ -479,6 +482,7 @@ img {
 	display: inline-block;
 	margin-right: 2em;
 	padding: 0 2em;
+	vertical-align: top;
 }
 .bookingHeader .filters .filter .filter-header {
 	padding: 1em 0.9em;
@@ -505,9 +509,23 @@ img {
 	padding-left: 40px;
 	background-position-x: 0;
 }
-.bookingHeader .filters button {
+#guests-handicapped {
+	height: 23px;
+	width: 23px;
+	margin-top: 23px;
+	border-bottom: 1px solid lightgray;
+	font-size: 1.2em;
+}
+.bookingHeader .filters .submit {
+	display: inline-block;
 	margin: 4em 0 0 0;
 	vertical-align: top;
+}
+.bookingHeader .filters .submit p {
+	line-height: 1.4em;
+}
+.bookingHeader .filters .submit button {
+	margin-top: 1em;
 }
 
 /* grids */

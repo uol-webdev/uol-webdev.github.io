@@ -74,11 +74,13 @@
                             <!-- Input forms for quantity of adults and children-->
                             <label for="guests-adults" class="filter-adults">Adults:</label>
                             <label for="guests-children" class="filter-children">Children:</label>
+                            <label for="guests-handicapped" class="filter-handicapped">Handicapped access:</label>
                         </div>
                         <div class="filter-input">
                             <!-- Settings of possible inputs: only numbers in the range starting from min and ending with max, also default value-->
                             <input id="guests-adults" name="guests-adults" type="number" min="1" max="4" value="1">
                             <input id="guests-children" name="guests-children" type="number" min="0" max="4" value="0">
+                            <input id="guests-handicapped" name="guests-handicapped" type="checkbox">
                         </div>
                     </div>
                     <div class="filter">
@@ -94,8 +96,20 @@
                             <input id="date-period-to" name="date-period-to" type="date">
                         </div>
                     </div>
-                    <!-- Button - Book now-->
-                    <button type="submit" class="button button1">Book now</button>
+                    <!-- Block with note and booking button -->
+                    <div class="submit">
+                        <p>
+                            No credit card needed for booking.
+                        </p>
+                        <p>
+                            Reachable 24h/7d.
+                        </p>
+                        <p>
+                            Special discounts available.
+                        </p>
+                        <!-- Button - Book now-->
+                        <button type="submit" class="button button1">Book now</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -165,13 +179,13 @@
 
             <div>
                 <a class="button button-sm" href="https://www.facebook.com" target="_blank">
-                    <img class="smLogo" src="img/Facebook.png" alt="Facebook"></a>
+                    <img class="social-media-logo" src="img/Facebook.png" alt="Facebook"></a>
                 <a class="button button-sm" href="https://www.instagram.com" target="_blank">
-                    <img class="smLogo" src="img/Instagram.png" alt="Instagram"></a>
+                    <img class="social-media-logo" src="img/Instagram.png" alt="Instagram"></a>
                 <a class="button button-sm" href="https://www.youtube.com" target="_blank">
-                    <img class="smLogo" src="img/Youtube.png" alt="YouTube"></a>
+                    <img class="social-media-logo" src="img/Youtube.png" alt="YouTube"></a>
                 <a class="button button-sm" href="https://www.twitter.com" target="_blank">
-                    <img class="smLogo" src="img/Twitter.png" alt="Twitter"></a>
+                    <img class="social-media-logo" src="img/Twitter.png" alt="Twitter"></a>
             </div>
             <div class="navigation-links">
                 <a class="references" href="https://www.vecteezy.com" target="_blank">Social Media Icon Vectors by
