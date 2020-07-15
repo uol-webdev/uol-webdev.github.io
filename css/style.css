@@ -355,6 +355,7 @@ img {
 /* attractions page styling */
 /****************************/
 
+/* set style for the attractions filer items */
 #attractionsFilterContainer {
 	background-color: #55b2ec;
 	grid-area: atfc;
@@ -393,6 +394,8 @@ img {
 #attractionsFilter .filter label {
 	display: block;
 }
+
+/* add style for the attractions images, and set them in grid area */
 #attractions {
 	grid-area: atrs;
 	text-align: center;
@@ -424,6 +427,8 @@ img {
 	text-shadow: rgba(10,10,10,.8) -1px 1px;
 	visibility: hidden;
 }
+
+/* show attractions descriptive text when hovering over image */
 .attraction:hover p {
 	visibility: visible;
 }
@@ -435,6 +440,7 @@ img {
 /* accommodation page styling */
 /****************************/
 
+/* set style for accommodation info input header, and place in grid area */
 .bookingHeader {
 	grid-area: bhdr;
 	background-color: #55b2ec;
@@ -442,13 +448,14 @@ img {
 	padding: 5px;
 }
 
+/* set style for list of hotels, and place in grid area */
 .accommodationListings {
 	grid-area: accm;
 	/* background-color: #55B2EC; */
 	color: white;
 	padding: 5px;
 }
-
+/* use flex to display hotel information */
 .accommodation {
 	display: flex;
 	flex-direction: row;
@@ -458,26 +465,24 @@ img {
 	padding: 5px;
 	margin: 5px;
 }
-
 .hotelPic {
 	max-width: 300px;
 	max-height: 300px;
 	width: auto;
 	height: auto;
 }
-
 .accommodationFeatures {
 	margin-top: 60px;
 	margin-left: 20px;
 	text-align: left;
 }
-
 .accommodationPrice {
 	margin-left: auto;
 	padding: 5px;
 	text-align: center;
 }
 
+/* set style for booking input elements */
 .bookingHeader .header,
 .bookingHeader .filters,
 .bookingHeader .filters .filter .filter-label,
@@ -541,6 +546,10 @@ img {
 /* grids */
 /*********/
 
+/* all pages have their own grid 
+   - they have the first two rows for nav bar and info/covid message and the last footer row in common */
+
+/* grid layout for index page */
 .grid-container-index {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -556,6 +565,8 @@ img {
 	padding: 10px;
 	background-color: white;
 }
+
+/* grid layout for attractions page */
 .grid-container-attractions {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -570,6 +581,7 @@ img {
 	background-color: white;
 }
 
+/* grid layout for accommodations page */
 .grid-container-accommodation {
 	display: grid;
 	grid-template-columns: 1fr 6fr 1fr;
