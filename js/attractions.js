@@ -1,3 +1,4 @@
+/* Execute this function as soon as DOM is ready */
 window.onload = function () {
 
     let attractions = document.getElementsByClassName('attraction');
