@@ -80,19 +80,16 @@
         </div>
 
         <!-- Carousel of attractions, source https://www.w3schools.com/w3css/w3css_slideshow.asp -->
-        <div id="imageCarousel">
-            <button class="button button0 display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <a href="attractions.html#attractionsFilter"><img class="carouselPic" src="img/carousel1.jpg"
-                    alt="Sea Creatures carousel"></a>
-            <a href="attractions.html#attractionsFilter"><img class="carouselPic" src="img/carousel2.jpg"
-                    alt="Wave Pool"></a>
-            <a href="attractions.html#attractionsFilter"><img class="carouselPic" src="img/carousel3.jpg"
-                    alt="Splash Mountain"></a>
-            <a href="attractions.html#attractionsFilter"><img class="carouselPic" src="img/carousel4.jpg"
-                    alt="Surf Ridge"></a>
-            <a href="attractions.html#attractionsFilter"><img class="carouselPic" src="img/carousel5.jpg"
-                    alt="Snake Tunnels"></a>
-            <button class="button button0 display-right" onclick="plusDivs(+1)">&#10095;</button>
+        <div id="carousel">
+            <button class="button button0" onclick="switchSlide(-1)">&#10094;</button>
+            <div class="slides">
+                <a href="attractions.html#attractionsFilter"><img src="img/carousel1.jpg" alt="Sea Creatures carousel"></a>
+                <a href="attractions.html#attractionsFilter"><img src="img/carousel2.jpg" alt="Wave Pool"></a>
+                <a href="attractions.html#attractionsFilter"><img src="img/carousel3.jpg" alt="Splash Mountain"></a>
+                <a href="attractions.html#attractionsFilter"><img src="img/carousel4.jpg" alt="Surf Ridge"></a>
+                <a href="attractions.html#attractionsFilter"><img src="img/carousel5.jpg" alt="Snake Tunnels"></a>
+            </div>
+            <button class="button button0" onclick="switchSlide(+1)">&#10095;</button>
         </div>
         <!-- News and special events section icon and heading -->
         <div id="specialEventsTitle">
@@ -145,13 +142,13 @@
             <!-- Social media links and pictures -->
             <div>
                 <a class="button button-sm" href="https://www.facebook.com" target="_blank">
-                    <img class="smLogo" src="img/Facebook.png" alt="Facebook"></a>
+                    <img class="social-media-logo" src="img/Facebook.png" alt="Facebook"></a>
                 <a class="button button-sm" href="https://www.instagram.com" target="_blank">
-                    <img class="smLogo" src="img/Instagram.png" alt="Instagram"></a>
+                    <img class="social-media-logo" src="img/Instagram.png" alt="Instagram"></a>
                 <a class="button button-sm" href="https://www.youtube.com" target="_blank">
-                    <img class="smLogo" src="img/Youtube.png" alt="YouTube"></a>
+                    <img class="social-media-logo" src="img/Youtube.png" alt="YouTube"></a>
                 <a class="button button-sm" href="https://www.twitter.com" target="_blank">
-                    <img class="smLogo" src="img/Twitter.png" alt="Twitter"></a>
+                    <img class="social-media-logo" src="img/Twitter.png" alt="Twitter"></a>
             </div>
             <!-- Section for assets sources -->
             <div class="navigation-links">

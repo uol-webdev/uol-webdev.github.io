@@ -24,16 +24,21 @@ body {
 /* Set colour for main h1 headings to white, with padding on left */
 h1 {
 	color: white;
-	padding-left: 0.5em;
+	padding-left: .5em;
 }
 /* Set colour for secondary h2 headings */
 h2 {
 	color: #0b74b5;
 }
+h1,
+h2 {
+	padding-left: .5em;
+}
 /* set colour and margin for paragraphs */
 p {
 	color: white;
 	margin: 0;
+	padding: 0 .5em;
 }
 
 /* set size and position of logo */
@@ -97,8 +102,8 @@ input:focus {
 /* place search image icon inside search input box */
 #searchBox {
 	grid-area: srch;
-	background: white url(../img/search-sm.png) left no-repeat;
-	padding-left: 40px;
+    background: white url(../img/search-sm.png) 4px no-repeat;
+	padding-left: 46px;
 }
 
 /* format buttons for language selection */
@@ -133,7 +138,6 @@ input:focus {
 	background-size: cover;
 	background-position: 0 0;
 	grid-area: info;
-	z-index: 0;
 	margin-top: -10px;
 	margin-bottom: -10px;
 }
@@ -220,19 +224,19 @@ footer {
 	background-color: #0e94e8;
 }
 
-/* ensure the languge icon keeps to the left of the page */
+/* ensure the language icon keeps to the left of the page */
 footer div:last-child {
 	margin-left: auto;
 }
 
-/* set defaul styling for all img elements */
+/* set default styling for all img elements */
 img {
 	padding: 5px 5px;
 	max-width: 100%;
 }
 
 /* set styling for social media logos in footer */
-.smLogo {
+.social-media-logo {
 	display: block;
 	max-width: 50px;
 	max-height: 50px;
@@ -242,14 +246,14 @@ img {
 
 /* set small font for reference info in footer */
 .references {
-	font-size: 0.5em;
+	font-size: .5em;
 }
 
 /* index page styling */
 /**********************/
 
 /* setup the image carousel as a flex item, within the grid area */
-#imageCarousel {
+#carousel {
 	grid-area: crsl;
 	display: flex;
 	flex-direction: row;
@@ -257,19 +261,23 @@ img {
 	flex-wrap: nowrap;
 }
 
+/* display next/prev carousel buttons on the right/left sides of the carousel images, over them */
+#carousel button {
+	position: absolute;
+	z-index: 1;
+}
+#carousel button:first-child {
+	left: 30px;
+}
+#carousel button:last-child {
+	right: 30px;
+}
 /* set styling for the carousel images */
-.carouselPic {
+#carousel img {
 	max-width: 100%;
 	height: 500px;
 	margin: 0 auto;
-}
-
-/* display next/prev carousel buttons on right/left of carousel images */
-.display-right {
-	margin-left: auto;
-}
-.display-left {
-	margin-right: auto;
+	padding: 0;
 }
 
 /* set style for special events elements */
@@ -393,7 +401,7 @@ img {
 	background-size: cover;
 	background-position: 0 0;
 	text-align: left;
-	margin: 0 0.5em 1em 0;
+	margin: 0 .5em 1em 0;
 	font-size: 18px;
 	display: inline-block;
 	height: 15em;
@@ -404,19 +412,24 @@ img {
 }
 .attraction h2 {
 	margin: 0;
-	padding: 0.5em;
+	padding: .5em;
 	color: white;
-	background: rgba(0, 0, 0, 0.3);
+	text-shadow: rgba(10,10,10,.8) -1px 1px;
 }
 .attraction p {
-	padding: 0.5em;
+	padding: .5em;
 	height: 100%;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	text-shadow: rgba(10,10,10,.8) -1px 1px;
 	visibility: hidden;
 }
 .attraction:hover p {
-	margin-top: 0;
-	background: rgba(0, 0, 0, 0.3);
 	visibility: visible;
+}
+.attraction h2,
+.attraction:hover p {
+    background: rgba(0, 0, 0, .15);
 }
 
 /* accommodation page styling */
@@ -479,6 +492,7 @@ img {
 	display: inline-block;
 	margin-right: 2em;
 	padding: 0 2em;
+	vertical-align: top;
 }
 .bookingHeader .filters .filter .filter-header {
 	padding: 1em 0.9em;
@@ -505,9 +519,23 @@ img {
 	padding-left: 40px;
 	background-position-x: 0;
 }
-.bookingHeader .filters button {
+#guests-handicapped {
+	height: 23px;
+	width: 23px;
+	margin-top: 23px;
+	border-bottom: 1px solid lightgray;
+	font-size: 1.2em;
+}
+.bookingHeader .filters .submit {
+	display: inline-block;
 	margin: 4em 0 0 0;
 	vertical-align: top;
+}
+.bookingHeader .filters .submit p {
+	line-height: 1.4em;
+}
+.bookingHeader .filters .submit button {
+	margin-top: 1em;
 }
 
 /* grids */

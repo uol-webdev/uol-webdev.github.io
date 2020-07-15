@@ -1,10 +1,10 @@
 Date.prototype.toDateInputValue = (function () {
-    var local = new Date(this);
+    let local = new Date(this);
     local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
     return local.toJSON().slice(0, 10);
 });
 Date.prototype.addDays = function (days) {
-    var date = new Date(this.valueOf());
+    let date = new Date(this.valueOf());
     date.setDate(date.getDate() + days);
     return date;
 }
