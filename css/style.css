@@ -32,7 +32,7 @@ h2 {
 }
 h1,
 h2 {
-	padding-left: 0.5em;
+	padding-left: .5em;
 }
 /* set colour and margin for paragraphs */
 p {
@@ -102,8 +102,8 @@ input:focus {
 /* place search image icon inside search input box */
 #searchBox {
 	grid-area: srch;
-	background: white url(../img/search-sm.png) left no-repeat;
-	padding-left: 40px;
+    background: white url(../img/search-sm.png) 4px no-repeat;
+	padding-left: 46px;
 }
 
 /* format buttons for language selection */
@@ -246,7 +246,7 @@ img {
 
 /* set small font for reference info in footer */
 .references {
-	font-size: 0.5em;
+	font-size: .5em;
 }
 
 /* index page styling */
@@ -400,7 +400,7 @@ img {
 	background-size: cover;
 	background-position: 0 0;
 	text-align: left;
-	margin: 0 0.5em 1em 0;
+	margin: 0 .5em 1em 0;
 	font-size: 18px;
 	display: inline-block;
 	height: 15em;
@@ -411,19 +411,24 @@ img {
 }
 .attraction h2 {
 	margin: 0;
-	padding: 0.5em;
+	padding: .5em;
 	color: white;
-	background: rgba(0, 0, 0, 0.3);
+	text-shadow: rgba(10,10,10,.8) -1px 1px;
 }
 .attraction p {
-	padding: 0.5em;
+	padding: .5em;
 	height: 100%;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	text-shadow: rgba(10,10,10,.8) -1px 1px;
 	visibility: hidden;
 }
 .attraction:hover p {
-	margin-top: 0;
-	background: rgba(0, 0, 0, 0.3);
 	visibility: visible;
+}
+.attraction h2,
+.attraction:hover p {
+    background: rgba(0, 0, 0, .15);
 }
 
 /* accommodation page styling */
