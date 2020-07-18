@@ -24,7 +24,7 @@ body {
 /* Set colour for main h1 headings to white, with padding on left */
 h1 {
 	color: white;
-	padding-left: .5em;
+	padding-left: 0.5em;
 }
 /* Set colour for secondary h2 headings */
 h2 {
@@ -32,13 +32,13 @@ h2 {
 }
 h1,
 h2 {
-	padding-left: .5em;
+	padding-left: 0.5em;
 }
 /* set colour and margin for paragraphs */
 p {
 	color: white;
 	margin: 0;
-	padding: 0 .5em;
+	padding: 0 0.5em;
 }
 
 /* set size and position of logo */
@@ -71,11 +71,12 @@ nav {
 }
 
 /* set colour and style of nav bar links when user interacts with them */
-.navigation-links a:active,
+.navigation-links .active {
+	font-weight: bolder;
+}
 .navigation-links a:hover {
 	color: #55b2ec;
-	border-color: hsla(246, 85%, 43%, 0.3);  /* dodgerBlue; */
-	box-shadow: 0 0 8px 0 hsla(246, 85%, 43%, 0.3);  /* dodgerBlue; */
+	box-shadow: 0 0 15px 1px royalblue;
 	background-color: white;
 }
 
@@ -95,14 +96,14 @@ input {
 
 /* animate border around search bar */
 input:focus {
-	border-color: hsla(246, 85%, 43%, 0.3);  /* dodgerBlue; */
-	box-shadow: 0 0 8px 0 hsla(246, 85%, 43%, 0.3);  /* dodgerBlue; */
+	box-shadow: 0 0 15px 1px royalblue;
+
 }
 
 /* place search image icon inside search input box */
 #searchBox {
 	grid-area: srch;
-    background: white url(../img/search-sm.png) 4px no-repeat;
+	background: white url(../img/search-sm.png) 4px no-repeat;
 	padding-left: 46px;
 }
 
@@ -182,8 +183,10 @@ input:focus {
 
 /* set animation around all buttons */
 .button:hover {
-	border-color: hsla(246, 85%, 43%, 0.3);  /* dodgerBlue; */
-	box-shadow: 0 0 8px 0 hsla(246, 85%, 43%, 0.3);  /* dodgerBlue; */
+	border-color: white;
+	/* border-style: solid; */
+	border-width: 20px;
+	box-shadow: 0 0 15px 1px royalblue;
 	cursor: pointer;
 }
 
@@ -246,7 +249,7 @@ img {
 
 /* set small font for reference info in footer */
 .references {
-	font-size: .5em;
+	font-size: 0.5em;
 }
 
 /* index page styling */
@@ -404,7 +407,7 @@ img {
 	background-size: cover;
 	background-position: 0 0;
 	text-align: left;
-	margin: 0 .5em 1em 0;
+	margin: 0 0.5em 1em 0;
 	font-size: 18px;
 	display: inline-block;
 	height: 15em;
@@ -415,16 +418,16 @@ img {
 }
 .attraction h2 {
 	margin: 0;
-	padding: .5em;
+	padding: 0.5em;
 	color: white;
-	text-shadow: rgba(10,10,10,.8) -1px 1px;
+	text-shadow: rgba(10, 10, 10, 0.8) -1px 1px;
 }
 .attraction p {
-	padding: .5em;
+	padding: 0.5em;
 	height: 100%;
 	font-size: 1.2em;
 	line-height: 1.4em;
-	text-shadow: rgba(10,10,10,.8) -1px 1px;
+	text-shadow: rgba(10, 10, 10, 0.8) -1px 1px;
 	visibility: hidden;
 }
 
@@ -434,7 +437,7 @@ img {
 }
 .attraction h2,
 .attraction:hover p {
-    background: rgba(0, 0, 0, .15);
+	background: rgba(0, 0, 0, 0.15);
 }
 
 /* accommodation page styling */
